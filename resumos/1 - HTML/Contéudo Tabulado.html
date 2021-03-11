@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Básico</title>
+        <style>
+            td,
+            th {
+                border: 1px solid rgb(190, 190, 190);
+                padding: 10px;
+            }
+
+            td {
+                text-align: center;
+            }
+
+            tr:nth-child(even) {
+                background-color: #eee;
+            }
+
+            th[scope="col"] {
+                background-color: #696969;
+                color: #fff;
+            }
+
+            th[scope="row"] {
+                background-color: #d7d9f2;
+            }
+
+            caption {
+                padding: 10px;
+                caption-side: bottom;
+            }
+
+            table {
+                border-collapse: collapse;
+                border: 2px solid rgb(200, 200, 200);
+                letter-spacing: 1px;
+                font-family: sans-serif;
+                font-size: 0.8rem;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- CAPTION, COL, COLGROUP, TABLE, THEAD, TBODY, TFOOT, TR, TH e TD -->
+        <div>
+            <table>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                </tr>
+                <tr>
+                    <td>Jane</td>
+                    <td>Doe</td>
+                </tr>
+            </table>
+
+            <br />
+
+            <table>
+                <tr>
+                    <th>First name</th>
+                    <th>Last name</th>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                </tr>
+                <tr>
+                    <td>Jane</td>
+                    <td>Doe</td>
+                </tr>
+            </table>
+
+            <br />
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Header content 1</th>
+                        <th>Header content 2</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td>Footer content 1</td>
+                        <td>Footer content 2</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>Body content 1</td>
+                        <td>Body content 2</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br />
+
+            <table>
+                <colgroup span="4" class="columns"></colgroup>
+                <tr>
+                    <th>Countries</th>
+                    <th>Capitals</th>
+                    <th>Population</th>
+                    <th>Language</th>
+                </tr>
+                <tr>
+                    <td>USA</td>
+                    <td>Washington D.C.</td>
+                    <td>309 million</td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td>Sweden</td>
+                    <td>Stockholm</td>
+                    <td>9 million</td>
+                    <td>Swedish</td>
+                </tr>
+            </table>
+
+            <br />
+
+            <table>
+                <colgroup>
+                    <col class="column1" />
+                    <col class="columns2plus3" span="2" />
+                </colgroup>
+                <tr>
+                    <th>Lime</th>
+                    <th>Lemon</th>
+                    <th>Orange</th>
+                </tr>
+                <tr>
+                    <td>Green</td>
+                    <td>Yellow</td>
+                    <td>Orange</td>
+                </tr>
+            </table>
+
+            <br />
+
+            <table>
+                <caption>
+                    Awesome caption
+                </caption>
+                <tr>
+                    <td>Awesome data</td>
+                </tr>
+            </table>
+
+            <br />
+
+            <table>
+                <caption>
+                    Council budget (in £) 2018
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Items</th>
+                        <th scope="col">Expenditure</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Donuts</th>
+                        <td>3,000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Stationery</th>
+                        <td>18,000</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br />
+
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Items</th>
+                        <th scope="col">Expenditure</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Donuts</th>
+                        <td>3,000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Stationery</th>
+                        <td>18,000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row">Totals</th>
+                        <td>21,000</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <br />
+
+            <table>
+                <caption>
+                    Alien football stars
+                </caption>
+                <tr>
+                    <th scope="col">Player</th>
+                    <th scope="col">Gloobles</th>
+                    <th scope="col">Za'taak</th>
+                </tr>
+                <tr>
+                    <th scope="row">TR-7</th>
+                    <td>7</td>
+                    <td>4,569</td>
+                </tr>
+                <tr>
+                    <th scope="row">Khiresh Odo</th>
+                    <td>7</td>
+                    <td>7,223</td>
+                </tr>
+                <tr>
+                    <th scope="row">Mia Oolong</th>
+                    <td>9</td>
+                    <td>6,219</td>
+                </tr>
+            </table>
+
+            <br />
+
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Member Since</th>
+                    <th>Balance</th>
+                </tr>
+                <tr>
+                    <td>Margaret Nguyen</td>
+                    <td>427311</td>
+                    <td><time datetime="2010-06-03">June 3, 2010</time></td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td>Edvard Galinski</td>
+                    <td>533175</td>
+                    <td><time datetime="2011-01-13">January 13, 2011</time></td>
+                    <td>37.00</td>
+                </tr>
+                <tr>
+                    <td>Hoshi Nakamura</td>
+                    <td>601942</td>
+                    <td><time datetime="2012-07-23">July 23, 2012</time></td>
+                    <td>15.00</td>
+                </tr>
+            </table>
+
+            <br />
+
+            <table>
+                <caption>
+                    Exemplo de título
+                </caption>
+                <tr>
+                    <th>Login</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>usuario1</td>
+                    <td>usuario1@dominio.com</td>
+                </tr>
+                <tr>
+                    <td>usuario2</td>
+                    <td>usuario2@dominio.com</td>
+                </tr>
+            </table>
+
+            <br />
+
+            <table>
+                <caption>
+                    Superheros and sidekicks
+                </caption>
+                <colgroup>
+                    <col />
+                    <col span="2" class="batman" />
+                    <col span="2" class="flash" />
+                </colgroup>
+                <tr>
+                    <td></td>
+                    <th scope="col">Batman</th>
+                    <th scope="col">Robin</th>
+                    <th scope="col">The Flash</th>
+                    <th scope="col">Kid Flash</th>
+                </tr>
+                <tr>
+                    <th scope="row">Skill</th>
+                    <td>Smarts</td>
+                    <td>Dex, acrobat</td>
+                    <td>Super speed</td>
+                    <td>Super speed</td>
+                </tr>
+            </table>
+        </div>
+        <!-- FIM CAPTION, COL, COLGROUP, TABLE, THEAD, TBODY, TFOOT, TR, TH e TD -->
+    </body>
+</html>
+<!-- CONTEÚDO TABULADO
+
+    Estes elementos são usados para se criar e manipular dados em tabelas.
+
+-->
+
+<!-- CAPTION, COL, COLGROUP, TABLE, THEAD, TBODY, TFOOT, TR, TH e TD
+
+    O Elemento HTML <caption> (ou Elemento HTML Subtitulo de Tabela) representa o título de uma tabela. Embora ele seja sempre o primeiro filho de um <table>, seu estilo, usando CSS pode colocar ele
+    em qualquer lugar relativo a tabela.
+
+
+
+
+
+    O elemento HTML <col> define uma tabela contendo colunas e sendo utilizada para definições semanticas em todas as colunas comuns. É normalmente encontrada dentro do elemento("colgroup")}}. Este
+    elemento permite a estilização de colunas utilizando-se do CSS, porém apenas um numero pequeno de atributos que terão efeito dentro das colunas (veja as especificações do CSS 2.1 a partir dessa lista).
+
+
+
+
+
+    O elemento HTML <colgroup> define um grupo de colunas em uma tabela.
+    
+    Atributos: 
+        - span: Este atributo contém um número inteiro positivo indicando o número de colunas consecutivas que o elemento <colgroup> abrange. Se não estiver presente, seu valor padrão é 1.
+
+
+
+
+
+    O elemento HTML Table (<table>) representa dados em duas dimensões ou mais.
+    
+
+
+
+    
+    O elemento HTML <thead> define um conjunto de linhas que definem o cabeçalho das colunas da tabela.
+
+
+
+
+
+    O <tfoot> é um elemento HTML que define um conjunto de linhas as quais farão parte do rodapé de uma tabela HTML.
+    
+        
+
+
+
+    O elemento HTML Table Body (<tbody>) encapsula um conjunto de linhas da tabela (elementos <tr>), indicando que eles compreendem o corpo da tabela (<table>). O elemento <tbody>, junto com seus
+    primos <thead> e <tfoot>, fornecem informações semânticas úteis que podem ser usadas ao renderizar para tela ou impressora, bem como para fins de acessibilidade. Se a tabela incluir um bloco
+    <thead> (para identificar semanticamente as linhas do cabeçalho), o bloco <tbody> deve vir depois dela. Se você usar <tbody>, você não pode ter linhas de tabela (elementos <tr>) que são filhos
+    diretos de <table>, mas não incluídos dentro de <tbody>. Todas as linhas que não sejam de cabeçalho e de rodapé devem estar dentro de <tbody> se alguma for usada. Ao imprimir um documento, os
+    elementos <thead> e <tfoot> especificam informações que podem ser as mesmas - ou pelo menos muito semelhantes - em cada página de uma tabela de várias páginas, enquanto o conteúdo do elemento
+    <tbody> geralmente difere da página até à página. Quando uma tabela é apresentada em um contexto de tela (como uma janela) que não é grande o suficiente para exibir a tabela inteira, o agente
+    do usuário pode permitir que o usuário role o conteúdo de <thead>, <tbody>, <tfoot>, e blocos <caption> separadamente um do outro para a mesma tabela pai. Você pode usar mais de um <tbody> por
+    mesa, desde que sejam todos consecutivos. Isso permite dividir as linhas em tabelas grandes em seções, cada uma das quais pode ser formatada separadamente, se desejado.
+
+
+
+
+
+    O elemento HTML <tr> define uma linha de células em uma tabela. As células da linha podem então ser estabelecidas usando uma combinação de elementos <td> (célula de dados) e <th> (célula de
+    cabeçalho). 
+    
+
+
+
+
+
+    O elemento HTML <th> define o cabeçalho de uma célula do grupo de células de sua tabela. Aidão natural deste grupo é denifida pelos atributos scope e headers.
+    
+    Atributos:
+
+        - abbr: Este atributo contém uma breve descrição do conteúdo da célula. Alguns usuários-agentes, como leitores, pode apresentar essa descrição antes do próprio conteúdo.
+
+        - colspan: Este atributo contém um valor inteiro não negativo que indica quantas colunas a célula ocupará. Valor padrão 1. Valores acima de 1000 são considerados incorretos e serão
+                   modificados para o valor padrão 1;
+
+        - headers: Este atributo contém uma lista de palavras separadas por espaço, cada uma correspondendo ao atributo id dos elementos <th> que se aplicam a este elemento;
+
+        - rowspan: Este atributo contém um valor inteiro não negativo que indica quantas linhas a célula estende. Valor padrão 1. Se seu valor é definido como 0, ele se estende até o final da tabela
+                   (<thead>, <tbody>, <tfoot>, mesmo que implicitamente definido), que a célula pertence. Não é possível colocar valores superiores a 65534.
+                    
+        - scope: Este atributo define as células a que o cabeçalho (definido no elemento <th>) se relaciona. Possíveis valores:
+
+            
+                 - row: O cabeçalho se relaciona com todas as células da linha a que pertence;
+
+                 - col: O cabeçalho se relaciona com todas as células da coluna a que pertence;
+
+                 - rowgroup: O cabeçalho pertence a um grupo de linhas e se relaciona com todas as suas células. Essas células podem ser colocadas à direita ou à esquerda do cabeçalho, dependendo do
+                             valor do atributo dir no elemento <table>;
+
+                 - colgroup: O cabeçalho pertence a um grupo de colgroup e se relaciona com todas as suas células;
+
+                 - auto: O valor padrão quando este atributo não é especificado é auto.
+
+
+
+
+
+    O elemento HTML <td> define uma célula de uma tabela que contém dados. Participa do modelo de mesa.
+
+    Atributos:
+
+        - colspan: Este atributo contém um valor inteiro não negativo que indica quantas colunas a célula ocupará. Valor padrão 1. Valores acima de 1000 são considerados incorretos e serão
+                   modificados para o valor padrão 1;
+
+        - headers: Este atributo contém uma lista de palavras separadas por espaço, cada uma correspondendo ao atributo id dos elementos <th> que se aplicam a este elemento;
+
+        - rowspan: Este atributo contém um valor inteiro não negativo que indica quantas linhas a célula estende. Valor padrão 1. Se seu valor é definido como 0, ele se estende até o final da tabela
+                   (<thead>, <tbody>, <tfoot>, mesmo que implicitamente definido), que a célula pertence. Não é possível colocar valores superiores a 65534.
+-->
+
+<!-- FIM CONTEÚDO TABULADO -->

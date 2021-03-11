@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Básico</title>
+        <style>
+            .output {
+                font: 1rem 'Fira Sans', sans-serif;
+            }
+
+            .note {
+                font-style: italic;
+                font-weight: bold;
+            }
+
+            .editorial {
+                background: rgb(255, 0, 0, .25);
+                padding: 10px;
+            }
+
+            .editorial:before {
+                content: 'Editor: ';
+            }
+
+            blockquote {
+                background: #eee;
+                border-radius: 5px;
+                margin: 16px 0;
+            }
+
+            blockquote p {
+                padding: 15px;
+            }
+
+            cite {
+                margin: 16px 32px;
+            }
+
+            blockquote p::before {
+                content: '\201C';
+            }
+
+            blockquote p::after {
+                content: '\201D';
+            }
+
+            [contenteditable='true'] {
+                caret-color: red;
+            }
+
+            p {
+                background: #ffe8d4;
+                border: 1px solid #f69d3c;
+                padding: 5px;
+                border-radius: 5px;
+            }
+
+            #exciting {
+                background: linear-gradient(to bottom, #ffe8d4, #f69d3c);
+                border: 1px solid #696969;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 2px 2px 1px black;
+            }
+
+            #exciting:before {
+                content: "ℹ️";
+                margin-right: 5px;
+            }
+        </style>
+    <body>
+    </body>
+    <!-- accesskey -->
+    <div>
+        <p>If you need to relax, press the
+        <strong><u>S</u></strong>tress reliever!</p>
+        <button accesskey="s">Stress reliever</button>
+    </div>
+    <!-- FIM accesskey -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- autocapitalize -->
+    <input type="text" autocapitalize="on"/>
+    <!-- FIM autocapitalize -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- class -->
+    <div>
+        <p>Narrator: This is the beginning of the play.</p>
+
+        <p class="note editorial">Above point sounds a bit obvious. Remove/rewrite?</p>
+
+        <p>Narrator: I must warn you now folks that this beginning is very exciting.</p>
+
+        <p class="note">[Lights go up and wind blows; Caspian enters stage right]</p>
+    </div>
+    <!-- FIM class -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- contenteditable -->
+    <div>
+        <blockquote contenteditable="true">
+            <p>Edit this content to add your own quote</p>
+        </blockquote>
+        <cite contenteditable="true">-- Write your own name here</cite>
+    </div>
+    <!-- FIM contenteditable -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- data-* -->
+    <div>
+        <h1>Secret agents</h1>
+        <ul>
+            <li data-id="10784">Jason Walters, 003: Found dead in "A View to a Kill".</li>
+            <li data-id="97865">Alex Trevelyan, 006: Agent turned terrorist leader; James' nemesis in "Goldeneye".</li>
+            <li data-id="45732">James Bond, 007: The main man; shaken but not stirred.</li>
+        </ul>        
+    </div>
+    <!-- FIM data-* -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- dir -->
+    <div>
+        <p dir="rtl">This paragraph is in English but incorrectly goes right to left.</p>
+        <p dir="ltr">This paragraph is in English and correctly goes left to right.</p>              
+    </div>
+    <!-- FIM dir -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- enterkeyhint -->
+    <div>
+        <input enterkeyhint="go">
+        <p contenteditable enterkeyhint="go">https://example.org</p>         
+    </div>
+    <!-- FIM enterkeyhint -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- hidden -->
+    <div>
+        <p>This content should be read right now, as it is important. I am so glad you are able to find it!</p>
+        <p hidden>This content is not relevant to this page right now, so should not be seen. Nothing to see here. Nada.</p>
+    </div>
+    <!-- FIM hidden -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- id -->
+    <div>
+        <p>A normal, boring paragraph. Try not to fall asleep.</p>
+        <p id="exciting">The most exciting paragraph on the page. One of a kind!</p>    
+    </div>     
+    <!-- FIM id -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- inputmode -->
+    <div>
+        <input inputmode="none">
+        <br>
+        <br>
+        <input inputmode="text">
+        <br>
+        <br>
+        <input inputmode="decimal">
+        <br>
+        <br>
+        <input inputmode="email">
+        <br>
+        <br>
+        <input inputmode="none">
+        <br>
+        <br>
+        <input inputmode="numeric">
+        <br>
+        <br>
+        <input inputmode="search">
+        <br>
+        <br>
+        <input inputmode="tel">
+        <br>
+        <br>
+        <input inputmode="url">
+    </div>     
+    <!-- FIM inputmode -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- lang -->
+    <div>
+        <p>This paragraph is English, but the language is not specifically defined.</p>
+        <p lang="en-GB">This paragraph is defined as British English.</p>
+        <p lang="fr">Ce paragraphe est défini en français.</p>        
+    </div>     
+    <!-- FIM lang -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- spellcheck -->
+    <div>
+        <p contenteditable spellcheck="true">Parametro</p>
+        <p contenteditable spellcheck="false">Parâmetro</p>  
+    </div>     
+    <!-- FIM spellcheck -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- style -->
+    <div style="background: #ffe7e8; border: 2px solid #e66465;">
+        <p style="margin: 15px; line-height: 1.5; text-align: center;">
+            Well, I am the slime from your video<br>
+            Oozin' along on your livin' room floor.
+        </p>
+    </div>   
+    <!-- FIM style -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- tabindex -->
+    <div>
+        <p>Click anywhere in this pane, then try tabbing through the elements.</p>
+
+        <label>First in tab order:<input type="text"></label>
+        
+        <div tabindex="0">Tabbable due to tabindex.</div>
+        
+        <div>Not tabbable: no tabindex.</div>
+        
+        <label>Third in tab order:<input type="text"></label> 
+    </div>
+    <!-- FIM tabindex -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- title -->
+    <div>
+        <p>The three primary web development technologies are
+            <abbr title="Hypertext Markup Language">HTML</abbr>,
+            <abbr title="Cascading Stylesheets">CSS</abbr>, and JavaScript.
+        </p>   
+    </div>
+    <!-- FIM title -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- translate -->
+    <div>
+        <footer>
+            <small>© 2020 <span translate="no">BrandName</span></small>
+        </footer>   
+    </div>
+    <!-- FIM translate -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+</html>
+<!-- ATRIBUTOS GLOBAIS
+
+    Atributos globais são atributos comuns a todos os elementos HTML; eles podem ser usados ​​em todos os elementos, embora possam não ter efeito em alguns elementos. Os atributos globais podem ser
+    especificados em todos os elementos HTML, mesmo aqueles não especificados no padrão. Isso significa que qualquer elemento fora do padrão ainda deve permitir esses atributos, embora o uso desses
+    elementos signifique que o documento não é mais compatível com HTML5. Por exemplo, navegadores compatíveis com HTML5 ocultam conteúdo marcado como <foo hidden> ... </foo>, embora <foo> não seja
+    um elemento HTML válido.
+
+    Além dos atributos globais básicos de HTML, os seguintes atributos globais também existem:
+
+        - Os vários atributos aria- *, usados ​​para melhorar a acessibilidade.
+        
+        - Os atributos do manipulador de eventos: onabort, onautocomplete, onautocompleteerror, onblur, oncancel, oncanplay, oncanplaythrough, onchange, onclick, onclose, oncontextmenu, oncuechange,
+          ondblclick, ondrag, ondragend, ondragenter, ondragexit , onendido, onerror, onfocus, oninput, oninvalid, onkeydown, onkeypress, onkeyup, onload, onloadeddata, onloadedmetadata, onloadstart,
+          onmousedown, onmouseenter, onmouseleave, onmousemove, onmouseout, onmouseover, onmouseatup, onmuseing , onreset, onresize, onscroll, onseeked, onseeking, onselect, onshow, onsort,
+          onstalled, onsubmit, onsuspend, ontimeupdate, ontoggle, onvolumechange, onwaiting.
+
+    Atributos:
+
+        - accesskey: Fornece uma dica para gerar um atalho de teclado para o elemento atual. Este atributo consiste em uma lista de caracteres separados por espaço. O navegador deve usar o primeiro
+                     existente no layout do teclado do computador.
+
+        - autocapitalize: Controla se e como a entrada de texto é capitalizada automaticamente à medida que é inserida / editada pelo usuário. Ele pode ter os seguintes valores:
+
+                          - off or none: Nenhuma autocapitalização é aplicada (todas as letras são padrão em minúsculas);
+
+                          - on or sentences: A primeira letra de cada sentença padrão é uma letra maiúscula; todas as outras letras são minúsculas;
+
+                          - words: A primeira letra de cada palavra padrão é uma letra maiúscula; todas as outras letras são minúsculas;
+
+                          - characters: Todas as letras devem ser maiúsculas por padrão.
+
+        - class: Uma lista separada por espaço das classes do elemento. As classes permitem que CSS e JavaScript selecionem e acessem elementos específicos por meio dos seletores de classe ou funções
+                 como o método Document.getElementsByClassName ().
+
+        - contenteditable: Um atributo enumerado que indica se o elemento deve ser editável pelo usuário. Nesse caso, o navegador modifica seu widget para permitir a edição. O atributo deve ter um
+                           dos seguintes valores:
+
+                               - true ou a string vazia que indica que o elemento deve ser editável;
+
+                               - false, que indica que o elemento não deve ser editável.
+
+        - data-*: Forma uma classe de atributos, chamados de atributos de dados personalizados, que permitem que informações proprietárias sejam trocadas entre o HTML e sua representação DOM que pode
+                  ser usada por scripts. Todos esses dados personalizados estão disponíveis por meio da interface HTMLElement do elemento em que o atributo está definido. A propriedade
+                  HTMLOrForeignElement / dataset dá acesso a eles.
+
+        - dir: Um atributo enumerado que indica a direcionalidade do texto do elemento. Ele pode ter os seguintes valores:
+
+                   - ltr, que significa da esquerda para a direita e deve ser usado para idiomas escritos da esquerda para a direita (como o inglês);
+
+                   - rtl, que significa da direita para a esquerda e deve ser usado para idiomas escritos da direita para a esquerda (como o árabe);
+
+                   - auto, que permite ao agente do usuário decidir. Ele usa um algoritmo básico, pois analisa os caracteres dentro do elemento até encontrar um caractere com uma direcionalidade
+                     forte e, em seguida, aplica essa direcionalidade a todo o elemento.
+
+        
+        - enterkeyhint: Dá dicas sobre qual rótulo de ação (ou ícone) apresentar para a tecla Enter em teclados virtuais. Valores:
+                 
+                                - enter: Normalmente inserindo uma nova linha;
+
+                                - done: Normalmente significa que não há mais nada para inserir e o editor de método de entrada (IME) será fechado;
+
+                                - go: Normalmente significa levar o usuário ao destino do texto que ele digitou;
+
+                                - next: Normalmente leva o usuário para o próximo campo que aceita texto;
+
+                                - previous: Normalmente leva o usuário para o campo anterior que aceita texto;
+
+                                - search: Normalmente leva o usuário aos resultados da pesquisa do texto que ele digitou;
+
+                                - send: Normalmente entrega o texto ao seu destino.
+
+
+        - hidden: Um atributo booleano indica que o elemento ainda não é, ou não é mais, relevante. Por exemplo, pode ser usado para ocultar elementos da página que não podem ser usados ​​até que o
+                  processo de login seja concluído. O navegador não renderiza tais elementos. Este atributo não deve ser usado para ocultar conteúdo que poderia ser mostrado de forma legítima.
+
+        - id: Define um identificador único (ID) que deve ser único em todo o documento. Seu objetivo é identificar o elemento durante a vinculação (usando um identificador de fragmento), script ou
+              estilo (com CSS).
+
+        - inputmode: Fornece uma dica aos navegadores quanto ao tipo de configuração do teclado virtual a ser usado ao editar este elemento ou seu conteúdo. Usado principalmente em elementos <input>,
+                     mas pode ser usado em qualquer elemento enquanto estiver no modo contenteditable. Valores:
+
+                        - none: Sem teclado virtual. Para quando a página implementa seu próprio controle de entrada de teclado;
+
+                        - text: Teclado de entrada padrão para a localidade atual do usuário;
+
+                        - decimal: Teclado de entrada numérica fracionária contendo os dígitos e o separador decimal para a localidade do usuário (normalmente. Ou,). Os dispositivos podem ou não
+                                   mostrar uma tecla menos (-);
+
+                        - numeric: Teclado numérico de entrada, mas requer apenas os dígitos 0–9. Os dispositivos podem ou não mostrar uma tecla menos;
+
+                        - tel: Uma entrada no teclado do telefone, incluindo os dígitos de 0 a 9, o asterisco (*) e a tecla sustenido (#). As entradas que requerem um número de telefone geralmente
+                               devem usar <input type = "tel"> em vez disso.
+
+                        - search: Um teclado virtual otimizado para entrada de pesquisa. Por exemplo, a chave de retorno / envio pode ser identificada como “Pesquisa”, junto com outras otimizações
+                                  possíveis. As entradas que requerem uma consulta de pesquisa geralmente devem usar <input type = "search"> em vez disso.
+
+                        - email: Um teclado virtual otimizado para inserir endereços de e-mail. Normalmente inclui o caractere @, bem como outras otimizações. As entradas que exigem endereços de
+                                 e-mail geralmente devem usar <input type = "email"> em vez disso.
+
+                        - url: Um teclado otimizado para inserir URLs. Isso pode ter a tecla / mais proeminente, por exemplo. Recursos aprimorados podem incluir acesso ao histórico e assim por diante.
+                               As entradas que exigem um URL geralmente devem usar <input type = "url"> em vez disso.
+
+
+        - lang: Ajuda a definir a linguagem de um elemento: a linguagem em que os elementos não editáveis ​​estão ou a linguagem em que os elementos editáveis ​​devem ser escritos pelo usuário. O
+                atributo contém uma “tag de idioma” (feita de “subtags de idioma” separadas por hífen) no formato definido em Tags para Identificar Idiomas (BCP47). xml: lang tem prioridade sobre
+                isso.
+        
+                
+        - spellcheck: Um atributo enumerado define se o elemento pode ser verificado quanto a erros de ortografia. Pode ter os seguintes valores:
+
+                          - true, que indica que o elemento deve ser, se possível, verificado em busca de erros ortográficos;
+
+                          - false, que indica que o elemento não deve ser verificado em busca de erros ortográficos.
+
+        - stule: Contém declarações de estilo CSS a serem aplicadas ao elemento. Observe que é recomendado que os estilos sejam definidos em um arquivo ou arquivos separados. Este atributo e o
+                 elemento <style> têm principalmente o propósito de permitir um estilo rápido, por exemplo, para fins de teste.
+
+        - tabindex: Um atributo inteiro que indica se o elemento pode receber o foco de entrada (pode ser focalizado), se ele deve participar da navegação sequencial do teclado e, em caso afirmativo,
+                    em que posição. Pode assumir vários valores:
+
+                        - Um valor negativo significa que o elemento deve ser focalizado, mas não deve ser alcançável por meio de navegação sequencial do teclado;
+
+                        - 0 significa que o elemento deve ser focalizável e alcançável por meio de navegação de teclado sequencial, mas sua ordem relativa é definida pela convenção de plataforma;
+
+                        - Um valor positivo significa que o elemento deve ser focalizado e acessível por meio de navegação sequencial do teclado; a ordem em que os elementos são focalizados é o valor
+                          crescente do tabindex. Se vários elementos compartilham o mesmo tabindex, sua ordem relativa segue suas posições relativas no documento.
+
+        - title: Contém um texto que representa informações consultivas relacionadas ao elemento ao qual pertence. Essas informações podem, normalmente, mas não necessariamente, ser apresentadas ao 
+                 usuário como uma dica de ferramenta.
+
+        - translate: Um atributo enumerado que é usado para especificar se os valores de atributo de um elemento e os valores de seus filhos do nó Texto devem ser traduzidos quando a página é
+                     localizada, ou se devem ser deixados inalterados. Ele pode ter os seguintes valores:
+
+                         - string vazia e yes, o que indica que o elemento será traduzido;
+
+                         - no, o que indica que o elemento não será traduzido.
+
+-->

@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Básico</title>
+        <style>
+            .onmousemoveeonmouseout{
+                width: 200px;
+                height: 100px;
+                border: 1px solid black;
+            }
+
+            .onscroll{
+                border: 1px solid black;
+                width: 200px;
+                height: 100px;
+                overflow: scroll;
+            }
+        </style>
+    <body>
+        <!-- onblur -->
+        <div>
+            <input type="text" id="blur" onblur="functionBlur()">
+        </div>
+        <script>
+            function functionBlur() {
+            var x = document.getElementById("blur");
+            x.value = x.value.toUpperCase();
+            }
+        </script>
+        <!-- FIM onblur e focus -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- onchange -->
+        <div>
+            <select id="mySelect" onchange="functionChange()">
+                <option value="Audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="Volvo">Volvo</option>
+            </select>
+            <p id="change"></p>  
+        </div>
+        <script>
+            function functionChange() {
+                var x = document.getElementById("mySelect").value;
+                document.getElementById("change").innerHTML = "You selected: " + x;
+            }
+        </script>
+        <!-- FIM onchange -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- onclick -->
+        <div>
+            <button onclick="functionClick()">Click me</button>
+            <p id="click"></p>
+        </div>
+        <script>
+            function functionClick() {
+                document.getElementById("click").innerHTML = "Hello World";
+            }
+        </script>
+        <!-- FIM onclick -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- oncopy -->
+        <div>
+            <input type="text" oncopy="functionCopy()" value="Try to copy this text">
+            <p id="copy"></p>
+        </div>
+        <script>
+            function functionCopy() {
+                document.getElementById("copy").innerHTML = "You copied text!"
+            }
+        </script>
+        <!-- FIM oncopy -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- oncut -->
+        <div>
+            <input type="text" oncut="functionCut()" value="Try to cut this text">
+            <p id="cut"></p>
+        </div>
+        <script>
+            function functionCut() {
+                document.getElementById("cut").innerHTML = "You cut text!";
+            }
+        </script>
+        <!-- FIM oncut -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- ondblclick -->
+        <div>
+            <p ondblclick="functionBlclick()">Double-click this paragraph to trigger a function.</p>
+            <p id="blclick"></p>
+        </div>
+        <script>
+            function functionBlclick() {
+                document.getElementById("blclick").innerHTML = "Hello World";
+            }
+        </script>
+        <!-- FIM ondblclick -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- onfocus -->
+        <div>
+            <input type="text" onfocus="functionFocus(this)">
+        </div>
+        <script>
+            function functionFocus(x) {
+                x.style.background = "yellow";
+            }
+        </script>
+        <!-- FIM onfocus -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- oninput -->
+        <div>
+            <input type="text" id="myInput" oninput="functionInput()">
+            <p id="input"></p>
+        </div>
+        <script>
+            function functionInput() {
+                var x = document.getElementById("myInput").value;
+                document.getElementById("input").innerHTML = "You wrote: " + x;
+            }
+        </script>
+        <!-- FIM oninput -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- oninvalid -->
+        <div>
+            <form action="" method="get">
+                <input type="text" oninvalid="alert('Preencha todos os campos!');" name="fname" required>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <!-- FIM oninvalid -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- onkeydown -->
+        <div>
+            <input type="text" onkeydown="alert('You pressed a key inside the input field');">
+        </div>
+        <!-- FIM onkeydown -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- onkeydown -->
+        <div>
+            <input type="text" onkeypress="alert('You pressed a key inside the input field');">
+        </div>
+        <!-- FIM onkeydown -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- onkeyup -->
+        <div>
+            <input type="text" id="keyup" onkeyup="functionKeyUp()">
+        </div>
+        <script>
+            function functionKeyUp() {
+            var x = document.getElementById("keyup");
+            x.value = x.value.toUpperCase();
+            }
+        </script>
+        <!-- FIM onkeyup -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- onload -->
+        <div>
+            <body onload="console.log('Onload Carregado!')">
+            </body>
+        </div>
+        <!-- FIM onload -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- onmousedown e onmouseup -->
+        <div>
+            <p id="ousedownemouseup" onmousedown="functionMouseDown()" onmouseup="functionMouseUp()">
+                Click the text! The mouseDown() function is triggered when the mouse button is pressed down over this paragraph, and sets the color of the text to red. The mouseUp() function is triggered when the mouse button is released, and sets the color of the text to green.
+            </p>
+        </div>
+        <script>
+            function functionMouseDown() {
+              document.getElementById("ousedownemouseup").style.color = "red";
+            }
+            
+            function functionMouseUp() {
+              document.getElementById("ousedownemouseup").style.color = "green";
+            }
+        </script>
+        <!-- FIM onmousedown e onmouseup -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- onmouseenter e onmouseleave -->
+
+        <div>
+            <img onmouseenter="functionMouseEnter(this)" onmouseleave="functionMouseLeave(this)" src="./public/img/mdn-logo.png" alt="MDN" width="450" height="250">
+            <p>The function functionMouseEnter() is triggered when the user moves the mouse pointer onto the image.</p>
+            <p>The function functionMouseLeave() is triggered when the mouse pointer is moved out of the image.</p>
+        </div>
+        <script>
+            function functionMouseEnter(x) {
+                x.style.height = "900px";
+                x.style.width = "500px";
+            }
+
+            function functionMouseLeave(x) {
+                x.style.height = "450px";
+                x.style.width = "250px";
+            }
+        </script>
+        <!-- FIM onmouseenter e onmouseleave -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- onmousemove e onmouseout -->
+        <div>
+            <div class="onmousemoveeonmouseout" onmousemove="functionMouseMove(event)" onmouseout="functionMouseOut()"></div>
+            <p id="onmousemoveeonmouseout"></p>
+        </div>
+        <script>
+            function functionMouseMove(e) {
+                var x = e.clientX;
+                var y = e.clientY;
+                var coor = "Coordinates: (" + x + "," + y + ")";
+                document.getElementById("onmousemoveeonmouseout").innerHTML = coor;
+            }
+
+            function functionMouseOut() {
+                document.getElementById("onmousemoveeonmouseout").innerHTML = "";
+            }
+        </script>
+        <!-- FIM onmousemove e onmouseout -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- onmouseover e onmouseleave -->
+
+        <div>
+            <img onmouseover="functionMouseOver(this)" onmouseleave="functionMouseLeave(this)" src="./public/img/mdn-logo.png" alt="MDN" width="450" height="250">
+            <p>The function functionMouseOver() is triggered when the user moves the mouse pointer onto the image.</p>
+            <p>The function functionMouseLeave() is triggered when the mouse pointer is moved out of the image.</p>
+        </div>
+        <script>
+            function functionMouseOver(x) {
+                x.style.height = "900px";
+                x.style.width = "500px";
+            }
+
+            function functionMouseLeave(x) {
+                x.style.height = "450px";
+                x.style.width = "250px";
+            }
+        </script>
+        <!-- FIM onmouseover e onmouseleave -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- onpast -->
+        <div>
+            <input type="text" onpaste="functionPast()" value="Try to paste something in here" size="40">
+            <p id="past"></p>
+        </div>
+        <script>
+            function functionPast() {
+                document.getElementById("past").innerHTML = "You pasted text!";
+            }
+        </script>
+        <!-- FIM onpast -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- onresize -->
+        <div>
+            <body onresize="functionResize()">
+                <p id="resize">Onresize</p>
+            </body>
+        </div>
+        <script>
+            function functionResize() {
+                var w = window.outerWidth;
+                var h = window.outerHeight;
+                var txt = "Window size: width=" + w + ", height=" + h;
+                document.getElementById("resize").innerHTML = txt;
+            }
+        </script>
+        <!-- FIM onresize -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- onreset  -->
+        <div>
+            <form onreset="functionReset()">
+                <input type="text">
+                <input type="reset">
+            </form>
+        </div>
+        <script>
+            function functionReset() {
+                alert("The form was reset");
+            }
+        </script>
+        <!-- FIM onreset  -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- onscroll  -->
+        <div>
+            <div class="onscroll" onscroll="functionScroll()">
+                In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.
+                <br><br>
+                'Whenever you feel like criticizing anyone,' he told me, just remember that all the people in this world haven't had the advantages that you've had.'
+            </div>
+            <p>Scrolled <span id="scroll">0</span> times.</p>
+        </div>
+        <script>
+            var x = 0;
+            function functionScroll() {
+                document.getElementById("scroll").innerHTML = x += 1;
+            }
+        </script>
+        <!-- FIM onscroll  -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- onselect  -->
+        <div>
+            <input type="text" value="Hello world!" onselect="functionSelect()">
+        </div>
+        <script>
+            function functionSelect() {
+                alert("You selected some text!");
+            }
+        </script>
+        <!-- FIM onselect  -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- onsubmit  -->
+        <div>
+            <form action="" onsubmit="functionSubmit(event)">
+                <input type="text" name="fname">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <script>
+            function functionSubmit(event) {
+                event.preventDefault();
+                alert("The form was submitted");
+            }
+        </script>
+        <!-- FIM onsubmit  -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- preventDefault  -->
+        <div>
+            <a id="preventDefault" href="https://w3schools.com/">Go to W3Schools.com</a>
+        </div>
+        <script>
+            document.getElementById("preventDefault").addEventListener("click", function(event){
+                event.preventDefault()
+            });
+        </script>
+        <!-- FIM preventDefault  -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </body>
+</html>
+<!-- EVENTOS GLOBAIS -->
+
+<!-- onblur 
+
+    O evento onblur ocorre quando um objeto perde o foco. O evento onblur é mais frequentemente usado com o código de validação do formulário (por exemplo, quando o usuário sai de um campo do
+    formulário).
+
+-->
+
+<!-- onchange
+
+    O evento onchange ocorre quando o valor de um elemento foi alterado. Para botões de opção e caixas de seleção, o evento onchange ocorre quando o estado selecionado é alterado.
+
+-->
+
+<!-- onclick
+
+    O evento onclick ocorre quando o usuário clica em um elemento.
+
+-->
+
+<!-- oncopy
+
+    O evento oncopy ocorre quando o usuário copia o conteúdo de um elemento.
+
+-->
+
+<!-- oncut
+
+    O evento oncut ocorre quando o usuário corta o conteúdo de um elemento.
+
+-->
+
+<!-- ondblclick
+
+    O evento ondblclick ocorre quando o usuário clica duas vezes em um elemento.
+
+-->
+
+<!-- onfocus
+
+    O evento onfocus ocorre quando um elemento obtém o foco. O evento onfocus é mais frequentemente usado com <input>, <select> e <a>.
+
+-->
+
+<!-- oninput
+
+    O evento oninput ocorre quando um elemento obtém a entrada do usuário. Este evento ocorre quando o valor de um elemento <input> ou <textarea> é alterado.
+
+-->
+
+<!-- oninput
+
+    O evento oninvalid ocorre quando um elemento submittable <input> é inválido. Por exemplo, o campo de entrada é inválido se o atributo obrigatório for definido e o campo estiver vazio (o atributo
+    obrigatório especifica que o campo de entrada deve ser preenchido antes de enviar o formulário).
+
+-->
+
+<!-- onkeydown 
+
+    O evento onkeydown ocorre quando o usuário está pressionando uma tecla (no teclado).
+
+-->
+
+<!-- onkeypress
+    
+    O evento onkeypress ocorre quando o usuário pressiona uma tecla (no teclado). 
+
+-->
+
+<!-- onkeyup
+
+    O evento onkeyup ocorre quando o usuário solta uma tecla (no teclado).
+
+-->
+
+<!-- onload
+
+    O evento onload ocorre quando um objeto é carregado. Onload é mais frequentemente usado dentro do elemento <body> para executar um script depois que uma página da web carregou completamente todo
+    o conteúdo (incluindo imagens, arquivos de script, arquivos CSS, etc.). O evento onload pode ser usado para verificar o tipo de navegador do visitante e a versão do navegador, e carregar a versão
+    apropriada da página da web com base nas informações.
+
+-->
+
+<!-- onmousedown e onmouseup
+
+    O evento onmousedown ocorre quando um usuário pressiona o botão do mouse sobre um elemento.
+
+
+
+
+
+    O evento onmouseup ocorre quando um usuário libera um botão do mouse sobre um elemento. 
+
+ -->
+
+<!-- onmouseenter e onmouseleave
+
+    O evento onmouseenter ocorre quando o ponteiro do mouse é movido para um elemento.
+
+
+
+
+
+    O evento onmouseleave ocorre quando o ponteiro do mouse é movido para fora de um elemento.
+
+-->
+
+<!-- onmousemove e onmouseout 
+
+    O evento onmousemove ocorre quando o ponteiro se move enquanto está sobre um elemento.
+
+
+
+
+
+    O evento onmouseout ocorre quando o ponteiro do mouse é movido para fora de um elemento ou de um de seus filhos.
+
+-->
+
+<!-- onmouseover
+
+    O evento onmouseover ocorre quando o ponteiro do mouse é movido para um elemento ou para um de seus filhos.
+
+-->
+
+<!-- onpast
+
+    O evento onpaste ocorre quando o usuário cola algum conteúdo em um elemento.
+
+-->
+
+<!-- onresize
+
+    O evento onresize ocorre quando a janela do navegador é redimensionada.
+
+-->
+
+<!-- onreset
+
+    O evento onreset ocorre quando um formulário é redefinido.
+
+-->
+
+<!-- oncroll
+
+    O evento onscroll ocorre quando a barra de rolagem de um elemento está sendo rolada.
+
+-->
+
+<!-- onselect
+
+    O evento onselect ocorre depois que algum texto foi selecionado em um elemento. O evento onselect é usado principalmente em elementos <input type = "text"> ou <textarea>.
+
+-->
+
+<!-- onsubmit
+
+    O evento onsubmit ocorre quando um formulário é enviado.
+
+-->
+
+<!-- preventDefault
+
+    O método preventDefault () cancela o evento se for cancelável, significando que a ação padrão que pertence ao evento não ocorrerá.
+
+    Por exemplo, isso pode ser útil quando:
+
+        - Clicando em um botão "Enviar", evita o envio de um formulário
+        - Clicar em um link impede que o link siga o URL  
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
