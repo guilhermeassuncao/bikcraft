@@ -1,0 +1,17 @@
+/* Propriedades
+
+    O objetivo básico da linguagem Cascading Stylesheet (CSS) é permitir que um mecanismo de navegador pinte os elementos da página com recursos específicos, como cores, posicionamento ou decorações.
+    A sintaxe CSS reflete esse objetivo e seus blocos de construção básicos são:
+
+        - A propriedade que é um identificador, ou seja, um nome legível por humanos, que define qual recurso é considerado;
+
+        - O valor que descreve como o recurso deve ser tratado pelo mecanismo. Cada propriedade possui um conjunto de valores válidos, definidos por uma gramática formal, bem como um significado
+          semântico, implementado pelo motor do navegador.
+
+*/
+
+/* background
+
+    Defina diferentes propriedades de fundo em uma declaração:
+
+*/

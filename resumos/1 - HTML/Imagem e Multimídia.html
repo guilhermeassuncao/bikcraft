@@ -15,18 +15,8 @@
             <br />
             <audio controls>
                 <source src="./public/audio/AudioTest.ogg" type="audio/ogg" />
-                <track
-                    kind="captions"
-                    src="AudioTest.en.vtt"
-                    srclang="en"
-                    label="English"
-                />
-                <track
-                    kind="captions"
-                    src="AudioTest.pt.vtt"
-                    srclang="pt"
-                    label="Portugues"
-                />
+                <track kind="captions" src="AudioTest.en.vtt" srclang="en" label="English" />
+                <track kind="captions" src="AudioTest.pt.vtt" srclang="pt" label="Portugues" />
             </audio>
         </div>
         <!-- FIM AUDIO e TRACK -->
@@ -39,10 +29,7 @@
 
         <!-- IMG -->
         <div>
-            <img
-                src="https://developer.mozilla.org/static/img/favicon144.png"
-                alt="MDN logo"
-            />
+            <img src="https://developer.mozilla.org/static/img/favicon144.png" alt="MDN logo" />
         </div>
         <!-- FIM IMG -->
 
@@ -67,112 +54,89 @@
 
 <!-- AUDIO e TRACK
 
-    O elemento audio é utilizado para embutir conteúdo de som em um documento HTML ou XHTML.O elemento audio foi adicionado como parte do HTML5. Você pode utilizar recursos avançados da API de áudio
-    — que são específicas do Gecko — para gerar e manipular diretamente fluxo de áudio a partir do código JavaScript. Veja Introducing the audio API extension para detalhes.
+    O elemento audio é utilizado para embutir conteúdo de som em um documento HTML ou XHTML.O elemento audio foi adicionado como parte do HTML5. Você pode utilizar recursos avançados da API de áudio — que são específicas do Gecko — para gerar e manipular diretamente fluxo de áudio a partir do código JavaScript. Veja Introducing the audio API extension para detalhes.
 
     Atributos:
 
-        - autoplay: Um atributo Booleano; se especificado (mesmo se o valor for "false"!), o áudio iniciará automaticamente assim que possível sem parar de carregar os dados.
+        - autoplay: Um atributo Booleano; se especificado (mesmo se o valor for "false"!), o áudio iniciará automaticamente assim que possível sem parar de carregar os dados;
 
-        - buffered: Um atributo que pode ser lido para determinar os intervalos do áudio que já foram carregados. Este atributo contém um objeto TimeRanges.
+        - buffered: Um atributo que pode ser lido para determinar os intervalos do áudio que já foram carregados. Este atributo contém um objeto TimeRanges;
 
-        - controls: Se esse atributo estiver presente, o navegador oferecerá controles para permitir ao usuário controlar a reprodução do áudio, incluindo volume, navegação, e pausa/continuação da
-                    reprodução.
+        - controls: Se esse atributo estiver presente, o navegador oferecerá controles para permitir ao usuário controlar a reprodução do áudio, incluindo volume, navegação, e pausa/continuação da reprodução;
         
-        - loop: Um atributo Booleano; se especificado, ao chegar no fim do áudio, ele voltará automaticamente para o começo.
+        - loop: Um atributo Booleano; se especificado, ao chegar no fim do áudio, ele voltará automaticamente para o começo;
 
-        - muted: Um atributo Booleano que indica se o áudio será inicializado silenciado.
+        - muted: Um atributo Booleano que indica se o áudio será inicializado silenciado;
 
-        - played: Um objeto TimeRangesindicando que todo o áudio foi reproduzido.
+        - played: Um objeto TimeRangesindicando que todo o áudio foi reproduzido;
 
         - preload: Esse atributo enumerado pretende dar uma sugestão ao navegador sobre o que o autor pensa que proporcionará uma melhor experiência do usuário. Ele pode ter os seguintes valores:
 
-                   - none: indica que o usuário não necessitará consultar o áudio ou que o servidor quer minimizar seu tráfego; em outros termos indica que o áudio não deve ser pré-carregado;
+                - none: indica que o usuário não necessitará consultar o áudio ou que o servidor quer minimizar seu tráfego; em outros termos indica que o áudio não deve ser pré-carregado;
 
-                   - metadata: indica que embora o usuário não necessitará consultar o áudio, pegar os meta-dados (ex: comprimento) é interessante;
+                - metadata: indica que embora o usuário não necessitará consultar o áudio, pegar os meta-dados (ex: comprimento) é interessante;
 
-                   - auto: indica que o usuário necessita ter prioridade; em outros termos isso significa que, se necessário, o áudio inteiro pode ser baixado, mesmo que não seja esperado a execução;
-                   
-                   - Uma string vazia: é um sinônimo do valor auto.
+                - auto: indica que o usuário necessita ter prioridade; em outros termos isso significa que, se necessário, o áudio inteiro pode ser baixado, mesmo que não seja esperado a execução;
+                
+                - Uma string vazia: é um sinônimo do valor auto.
         
-        - src: A URL do áudio a ser incorporado. Isso é sujeito a HTTP access controls. Isto é opcional; ao invés disso você pode usar o elemento <source> dentro do bloco do áudio para especificar o
-               vídeo a ser incorporado.
+        - src: A URL do áudio a ser incorporado. Isso é sujeito a HTTP access controls. Isto é opcional; ao invés disso você pode usar o elemento <source> dentro do bloco do áudio para especificar o vídeo a ser incorporado.
 
-               
-
-
-
-    O elemento HTML <track> é usado como filho dos elementos de mídia<audio> e <video>. Ele permite que você especifique faixas de texto temporizadas (ou dados baseados em tempo), por exemplo, para
-    lidar automaticamente com legendas.
+    O elemento HTML <track> é usado como filho dos elementos de mídia<audio> e <video>. Ele permite que você especifique faixas de texto temporizadas (ou dados baseados em tempo), por exemplo, para lidar automaticamente com legendas.
 
     Atributos:
         
-        - default: Este atributo indica que a trilha deve ser habilitada, a menos que as preferências do usuário indiquem que outra trilha seja mais apropriada. Isso só pode ser usado em um elemento
-                   de trilha por elemento de mídia.
+        - default: Este atributo indica que a trilha deve ser habilitada, a menos que as preferências do usuário indiquem que outra trilha seja mais apropriada. Isso só pode ser usado em um elemento de trilha por elemento de mídia;
 
-        - kind: Como a trilha de texto deve ser usada. Se omitido, o tipo padrão é legendas. Se o atributo não estiver presente, ele usará as legendas. Se o atributo contiver um valor inválido,
-                ele usará metadados:
+        - kind: Como a trilha de texto deve ser usada. Se omitido, o tipo padrão é legendas. Se o atributo não estiver presente, ele usará as legendas. Se o atributo contiver um valor inválido, ele usará metadados:
 
-                    - subtitles: As legendas fornecem tradução de conteúdo que não pode ser compreendido pelo visualizador. Por exemplo, diálogo ou texto que não seja o inglês em um filme em inglês.
-                                 As legendas podem conter conteúdo adicional, geralmente informações adicionais de fundo. Por exemplo, o texto no início dos filmes Star Wars ou a data, hora e local 
-                                 de uma cena.
+                - subtitles: As legendas fornecem tradução de conteúdo que não pode ser compreendido pelo visualizador. Por exemplo, diálogo ou texto que não seja o inglês em um filme em inglês. As legendas podem conter conteúdo adicional, geralmente informações adicionais de fundo. Por exemplo, o texto no início dos filmes Star Wars ou a data, hora e local  de uma cena;
 
-                    - captions: As legendas ocultas fornecem uma transcrição e possivelmente uma tradução de áudio. Pode incluir informações não verbais importantes, como pistas musicais ou efeitos
-                                sonoros. Pode indicar a fonte da sugestão (por exemplo, música, texto, personagem). Adequado para usuários surdos ou quando o som está silenciado.
+                - captions: As legendas ocultas fornecem uma transcrição e possivelmente uma tradução de áudio. Pode incluir informações não verbais importantes, como pistas musicais ou efeitos sonoros. Pode indicar a fonte da sugestão (por exemplo, música, texto, personagem). Adequado para usuários surdos ou quando o som está silenciado;
 
-                    - descriptions: Descrição textual do conteúdo do vídeo. Adequado para usuários cegos ou onde o vídeo não pode ser visto.
+                - descriptions: Descrição textual do conteúdo do vídeo. Adequado para usuários cegos ou onde o vídeo não pode ser visto;
 
-                    - chapters: Os títulos dos capítulos devem ser usados quando o usuário está navegando no recurso de mídia.
+                - chapters: Os títulos dos capítulos devem ser usados quando o usuário está navegando no recurso de mídia;
 
-                    - metadata: Trilhas usadas por scripts. Não visível para o usuário.
+                - metadata: Trilhas usadas por scripts. Não visível para o usuário.
 
-        - label: Um título legível pelo usuário da trilha de texto que é usado pelo navegador ao listar as trilhas de texto disponíveis.
+        - label: Um título legível pelo usuário da trilha de texto que é usado pelo navegador ao listar as trilhas de texto disponíveis;
 
-        - src: Endereço da trilha (arquivo .vtt). Deve ser um URL válido. Este atributo deve ser especificado e seu valor de URL deve ter a mesma origem do documento - a menos que o elemento pai
-               <audio> ou <video> do elemento track tenha um atributo crossorigin.
+        - src: Endereço da trilha (arquivo .vtt). Deve ser um URL válido. Este atributo deve ser especificado e seu valor de URL deve ter a mesma origem do documento - a menos que o elemento pai <audio> ou <video> do elemento track tenha um atributo crossorigin;
 
         - srclang: Idioma dos dados do texto da faixa. Deve ser uma tag de idioma BCP 47 válida. Se o atributo kind for definido para legendas, srclang deve ser definido.
-
-
 
 -->
 
 <!-- IMG
 
-    O elemento HTML <img>  (or HTML Image Element) representa a inserção de imagem no documento, sendo implementado também pelo HTML5 para uma melhor experiência com o elemento <figure> e
-    <figcaption>.
+    O elemento HTML <img>  (or HTML Image Element) representa a inserção de imagem no documento, sendo implementado também pelo HTML5 para uma melhor experiência com o elemento <figure> e <figcaption>.
 
     Atributos:
 
-        - alt: Este atributo define um texto alternativo que descreve a imagem. Os Usuários irão ver o texto se a URL da imagem estiver errado, a imagem não está em um dos  formatos suportados ou até
-               a imagem ser baixada.
+        - alt: Este atributo define um texto alternativo que descreve a imagem. Os Usuários irão ver o texto se a URL da imagem estiver errado, a imagem não está em um dos  formatos suportados ou até a imagem ser baixada;
         
-        - crossorigin: Este atributo enumerado indica se a busca da imagem relacionada deve ser feita usando CORS ou não. As imagens habilitadas para CORS podem ser reutilizadas no elemento <canvas>
-                       sem serem contaminadas. Os valores permitidos são:
+        - crossorigin: Este atributo enumerado indica se a busca da imagem relacionada deve ser feita usando CORS ou não. As imagens habilitadas para CORS podem ser reutilizadas no elemento <canvas> sem serem contaminadas. Os valores permitidos são:
 
-                           - anonymous: Uma solicitação de origem cruzada (ou seja, com Origem: cabeçalho HTTP) é realizada. Mas nenhuma credencial é enviada (ou seja, nenhum cookie, nenhum
-                                        certificado X.509 e nenhuma autenticação HTTP Basic é enviada). Se o servidor não fornecer credenciais ao site de origem (não configurando o cabeçalho Access
-                                        -Control-Allow-Origin: HTTP), a imagem será manchada e seu uso restrito.
-                            
-                            - use-credentials: Uma solicitação de origem cruzada (ou seja, com Origem: cabeçalho HTTP) realizada com a credencial é enviada (ou seja, um cookie, um certificado e
-                                               autenticação HTTP Basic é realizada). Se o servidor não fornecer credenciais ao site de origem (por meio do cabeçalho Access-Control-Allow-Credentials:
-                                               HTTP), a imagem será contaminada e seu uso restrito.
+                - anonymous: Uma solicitação de origem cruzada (ou seja, com Origem: cabeçalho HTTP) é realizada. Mas nenhuma credencial é enviada (ou seja, nenhum cookie, nenhum certificado X.509 e nenhuma autenticação HTTP Basic é enviada). Se o servidor não fornecer credenciais ao site de origem (não configurando o cabeçalho Access-Control-Allow-Origin: HTTP), a imagem será manchada e seu uso restrito;
+                
+                - use-credentials: Uma solicitação de origem cruzada (ou seja, com Origem: cabeçalho HTTP) realizada com a credencial é enviada (ou seja, um cookie, um certificado e autenticação HTTP Basic é realizada). Se o servidor não fornecer credenciais ao site de origem (por meio do cabeçalho Access-Control-Allow-Credentials: HTTP), a imagem será contaminada e seu uso restrito.
         
-        - height: A altura da imagem em pixels HTML5 CSS ou HTML 4 em pixels ou como uma porcentagem.
+        - height: A altura da imagem em pixels HTML5 CSS ou HTML 4 em pixels ou como uma porcentagem;
 
-        - ismap: Este atributo booleano indica que a imagem faz parte de um mapa do lado do servidor. Nesse caso, as coordenadas precisas de um clique são enviadas ao servidor.
+        - ismap: Este atributo booleano indica que a imagem faz parte de um mapa do lado do servidor. Nesse caso, as coordenadas precisas de um clique são enviadas ao servidor;
 
-        - longdescHTML: O URL de uma descrição da imagem a ser exibida, que complementa o texto alternativo. Em HTML5, use um elemento <a> regular para vincular à descrição.
+        - longdescHTML: O URL de uma descrição da imagem a ser exibida, que complementa o texto alternativo. Em HTML5, use um elemento <a> regular para vincular à descrição;
 
-        - src: URL da imagem, este atributo é obrigatório para o elemento <img>. Em navegadores que suportam srcset, src é ignorado se este for fornecido.
+        - src: URL da imagem, este atributo é obrigatório para o elemento <img>. Em navegadores que suportam srcset, src é ignorado se este for fornecido;
 
         - srcset: Uma lista de uma ou mais strings separadas por vírgulas indicando um conjunto de imagens possíveis para o agente do usuário usar. Cada string é composta por:
                   
-                      - Uma URL para uma imagem;
+                - Uma URL para uma imagem;
 
-                      - Um descritor de largura, que é um número inteiro positivo seguido diretamente por 'w'. O valor padrão, se ausente, é o infinito;
+                - Um descritor de largura, que é um número inteiro positivo seguido diretamente por 'w'. O valor padrão, se ausente, é o infinito;
 
-                      - Mm descritor de densidade de pixel, que é um número flutuante positivo seguido diretamente por 'x'. O valor padrão, se ausente, é 1x.
+                - Mm descritor de densidade de pixel, que é um número flutuante positivo seguido diretamente por 'x'. O valor padrão, se ausente, é 1x.
         
         - width: A largura da imagem em pixels ou porcentagem;
 
@@ -180,7 +144,6 @@
     
     O padrão HTML não fornece uma lista de formatos de imagem que devem ser suportados, portanto, cada agente de usuário oferece suporte a um conjunto diferente de formatos. Gecko suporta:
 
-    
         - JPEG;
 
         - GIF, incluindo GIFs animados;
@@ -205,36 +168,33 @@
 
      Atributos:
 
-        - autoplay: Um atributo Booleano; se especificado (mesmo se o valor for "false"!), o áudio iniciará automaticamente assim que possível sem parar de carregar os dados.
+        - autoplay: Um atributo Booleano; se especificado (mesmo se o valor for "false"!), o áudio iniciará automaticamente assim que possível sem parar de carregar os dados;
 
-        - buffered: Um atributo que pode ser lido para determinar os intervalos do áudio que já foram carregados. Este atributo contém um objeto TimeRanges.
+        - buffered: Um atributo que pode ser lido para determinar os intervalos do áudio que já foram carregados. Este atributo contém um objeto TimeRanges;
 
-        - controls: Se esse atributo estiver presente, o navegador oferecerá controles para permitir ao usuário controlar a reprodução do áudio, incluindo volume, navegação, e pausa/continuação da
-                    reprodução.
+        - controls: Se esse atributo estiver presente, o navegador oferecerá controles para permitir ao usuário controlar a reprodução do áudio, incluindo volume, navegação, e pausa/continuação da reprodução;
         
-        - height: A altura da área de exibição do vídeo, em pixels de CSS.
+        - height: A altura da área de exibição do vídeo, em pixels de CSS;
         
-        - loop: Um atributo Booleano; se especificado, ao chegar no fim do áudio, ele voltará automaticamente para o começo.
+        - loop: Um atributo Booleano; se especificado, ao chegar no fim do áudio, ele voltará automaticamente para o começo;
 
-        - muted: Um atributo Booleano que indica se o áudio será inicializado silenciado.
+        - muted: Um atributo Booleano que indica se o áudio será inicializado silenciado;
 
-        - played: Um objeto TimeRangesindicando que todo o áudio foi reproduzido.
+        - played: Um objeto TimeRangesindicando que todo o áudio foi reproduzido;
 
         - preload: Esse atributo enumerado pretende dar uma sugestão ao navegador sobre o que o autor pensa que proporcionará uma melhor experiência do usuário. Ele pode ter os seguintes valores:
 
-                   - none: indica que o usuário não necessitará consultar o áudio ou que o servidor quer minimizar seu tráfego; em outros termos indica que o áudio não deve ser pré-carregado;
+                - none: indica que o usuário não necessitará consultar o áudio ou que o servidor quer minimizar seu tráfego; em outros termos indica que o áudio não deve ser pré-carregado;
 
-                   - metadata: indica que embora o usuário não necessitará consultar o áudio, pegar os meta-dados (ex: comprimento) é interessante;
+                - metadata: indica que embora o usuário não necessitará consultar o áudio, pegar os meta-dados (ex: comprimento) é interessante;
 
-                   - auto: indica que o usuário necessita ter prioridade; em outros termos isso significa que, se necessário, o áudio inteiro pode ser baixado, mesmo que não seja esperado a execução;
-                   
-                   - Uma string vazia: é um sinônimo do valor auto.
+                - auto: indica que o usuário necessita ter prioridade; em outros termos isso significa que, se necessário, o áudio inteiro pode ser baixado, mesmo que não seja esperado a execução;
+                
+                - Uma string vazia: é um sinônimo do valor auto.
         
-        - poster: Uma URL indicando uma imagem de prévia do vídeo até o usuário reproduzir ou navegar por ele. Se este atributo não estiver especificado, nada será mostrado até que o primeiro quadro
-                  esteja disponível; então o primeiro quadro será exibido como imagem de prévia.
+        - poster: Uma URL indicando uma imagem de prévia do vídeo até o usuário reproduzir ou navegar por ele. Se este atributo não estiver especificado, nada será mostrado até que o primeiro quadro esteja disponível; então o primeiro quadro será exibido como imagem de prévia;
         
-        - src: A URL do áudio a ser incorporado. Isso é sujeito a HTTP access controls. Isto é opcional; ao invés disso você pode usar o elemento <source> dentro do bloco do áudio para especificar o
-               vídeo a ser incorporado.
+        - src: A URL do áudio a ser incorporado. Isso é sujeito a HTTP access controls. Isto é opcional; ao invés disso você pode usar o elemento <source> dentro do bloco do áudio para especificar o vídeo a ser incorporado;
 
         - width: A largura da área de exibição do vídeo, em pixels de CSS.
 

@@ -103,13 +103,8 @@
             </style>
             <details>
                 <summary>
-                    <code class="name"
-                        >&lt;<slot name="element-name">NEED NAME</slot
-                        >&gt;</code
-                    >
-                    <i class="desc"
-                        ><slot name="description">NEED DESCRIPTION</slot></i
-                    >
+                    <code class="name">&lt;<slot name="element-name">NEED NAME</slot>&gt;</code>
+                    <i class="desc"><slot name="description">NEED DESCRIPTION</slot></i>
                 </summary>
                 <div class="attributes">
                     <h4>Attributes</h4>
@@ -120,6 +115,7 @@
         </template>
         <!-- FIM SLOT -->
 
+        <!-- SCRIPT -->
         <script>
             if ("content" in document.createElement("template")) {
                 // Instancie a tabela com o HTML tbody e a row com o template
@@ -142,28 +138,24 @@
                 tb[0].appendChild(clone2);
             }
         </script>
+        <!-- SCRIPT -->
     </body>
 </html>
 <!-- COMPONENTES WEB
 
-    Componentes Web são uma tecnologia relacionada a HTML que faz possível, essencialmente, a criação e customização de elementos como se fossem parte normal do HTML. Além disso, se pode criar
-    versões customizadas de elementos padrão do HTML.
+    Componentes Web são uma tecnologia relacionada a HTML que faz possível, essencialmente, a criação e customização de elementos como se fossem parte normal do HTML. Além disso, se pode criar versões customizadas de elementos padrão do HTML.
 
 -->
 
 <!-- TEMPLATE
 
-    O  elemento HTML <template> é um mecanismo para encapsular um conteúdo do lado do cliente que não é renderizado quando a página é carregada, mas que pode ser instanciado posteriormente em tempo
-    de execução usando JavaScript. Pense no template como um fragmento de conteúdo, que é armazenado para um possível uso futuro no documento. Enquanto o parser processa o conteúdo do elemento
-    <template> ao carregar a página, isso apenas garante que o conteúdo é válido; porém, o conteúdo do elemento ainda não foi renderizado.
-
+    O  elemento HTML <template> é um mecanismo para encapsular um conteúdo do lado do cliente que não é renderizado quando a página é carregada, mas que pode ser instanciado posteriormente em tempo de execução usando JavaScript. Pense no template como um fragmento de conteúdo, que é armazenado para um possível uso futuro no documento. Enquanto o parser processa o conteúdo do elemento <template> ao carregar a página, isso apenas garante que o conteúdo é válido; porém, o conteúdo do elemento ainda não foi renderizado.
 
 -->
 
 <!-- SLOT
 
-    O elemento HTML <slot> - parte do pacote de tecnologia Web Components - é um espaço reservado dentro de um componente da web que você pode preencher com sua própria marcação, o que permite criar
-    árvores DOM separadas e apresentá-las juntas.
+    O elemento HTML <slot> - parte do pacote de tecnologia Web Components - é um espaço reservado dentro de um componente da web que você pode preencher com sua própria marcação, o que permite criar árvores DOM separadas e apresentá-las juntas.
 
     Atributos:
 

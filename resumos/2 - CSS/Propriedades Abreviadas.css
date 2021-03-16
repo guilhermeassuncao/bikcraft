@@ -1,0 +1,316 @@
+/* Propriedades Abreviadas
+
+    Propriedades shorthand (tradução literal: Propriedades abreviadas) são propriedades de CSS que deixam você setar os valores de outras propriedades de CSS simultaneamente. Usando shorthand property, um desenvolvedor web pode escrever folhas de estilo mais concisas e legíveis, economizando tempo e energia. A especificação CSS define como shorthand properties, o grupo de propriedades com o mesmo tema. Ex: a propriedade CSS background é uma propriedade shorthand que é capaz de definir o valor de background-color, background-image, background-repeat, e background-position. Assim também,como as propriedades comuns e relacionadas a fonte podem ser definidas e usadas com o shorthand font (en-US),e os diferentes margins em volta de um box podem ser definidas com o shorthand margin.
+
+*/
+
+/* background
+
+    A propriedade CSS abreviada do plano de fundo define todas as propriedades de estilo de plano de fundo de uma vez, como cor, imagem, origem e tamanho ou método de repetição.
+
+    Sintaxe
+
+        - background-color: #000;
+
+        - background-image: url(images/bg.gif);
+
+        - background-repeat: no-repeat;
+
+        - background-position: top right;
+
+        - background: #000 url(images/bg.gif) no-repeat top right;
+
+    Esta propriedade é uma abreviatura para as seguintes propriedades CSS:
+
+        - background-attachment: A propriedade CSS background-attachment define se a posição de uma imagem de plano de fundo é fixada na janela de visualização ou se rola com o bloco que a contém.
+
+            Sintaxe
+
+                - background-attachment: scroll;
+
+                - background-attachment: fixed;
+
+                - background-attachment: local;
+
+            Valores
+
+                - fixo: O fundo é fixo em relação à janela de visualização. Mesmo se um elemento tiver um mecanismo de rolagem, o plano de fundo não se move com o elemento;
+                
+                - local: O fundo é fixo em relação ao conteúdo do elemento. Se o elemento tiver um mecanismo de rolagem, o plano de fundo rola com o conteúdo do elemento, e a área de pintura do plano de fundo e a área de posicionamento do plano de fundo são relativas à área de rolagem do elemento e não à borda que os enquadra;
+                
+                - scroll: O plano de fundo é fixo em relação ao próprio elemento e não rola com seu conteúdo.
+
+        - background-clip: A propriedade CSS background-clip define se o fundo de um elemento se estende abaixo de sua caixa de borda, caixa de preenchimento ou caixa de conteúdo.
+
+            Sintaxe
+
+                - background-clip: border-box;
+
+                - background-clip: padding-box;
+
+                - background-clip: content-box;
+
+                - background-clip: text;
+
+            Valores
+
+                - border-box: O plano de fundo se estende até a borda externa da borda (mas abaixo da borda na ordem z);
+
+                - padding-box: O plano de fundo se estende até a borda externa do preenchimento. Nenhum plano de fundo é desenhado abaixo da borda;
+
+                - content-box: O fundo é pintado dentro (recortado) da caixa de conteúdo;
+
+                - text: o plano de fundo é pintado dentro (cortado) do texto do primeiro plano;
+
+      - background-color: A propriedade CSS background-color define a cor de fundo de um elemento.
+
+                               - Sintaxe
+
+                                   - background-color: brown;
+
+                                   - background-color: #74992e;
+
+                                   - background-color: rgb(255, 255, 128);
+
+                                   - background-color: rgba(255, 255, 128, .5);
+
+                                   - background-color: hsl(50, 33%, 25%);
+
+                                   - background-color: hsla(50, 33%, 25%, .75);
+
+                               - Valores
+
+                                   - color: A cor uniforme do fundo. Ele é renderizado atrás de qualquer imagem de fundo especificada, embora a cor ainda seja visível por meio de qualquer transparência na imagem.
+
+      - background-image: A propriedade CSS background-image define uma ou mais imagens de fundo em um elemento.
+
+                               - Sintaxe
+
+                                   - background-image: url("../../media/examples/lizard.png");
+
+                                   - background-image: url("../../media/examples/lizard.png"), url("../../media/examples/star.png");
+
+                                   - background-image: url("../../media/examples/star.png"), url("../../media/examples/lizard.png");
+
+                                   - background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../../media/examples/lizard.png");
+
+                               - Valores
+
+                                   - none: É uma palavra-chave que denota a ausência de imagens;
+
+                                   - image: É uma <imagem> denotando a imagem a ser exibida. Pode haver vários deles, separados por vírgulas, pois vários fundos são suportados.
+
+      - background-origin: A propriedade CSS background-origin define a origem do fundo: do início da borda, dentro da borda ou dentro do preenchimento. Observe que a background-origin é ignorada quando o background-attachment é corrigido.
+
+                               - Sintaxe
+
+                                   - background-origin: border-box;
+
+                                   - background-origin: padding-box;
+
+                                   - background-origin: content-box;
+
+                               - Valores
+
+                                   - border-box: O fundo é posicionado em relação à caixa da borda;
+                                   
+                                   - padding-box: O plano de fundo é posicionado em relação à caixa de preenchimento;
+                                  
+                                   - content-box: O plano de fundo é posicionado em relação à caixa de conteúdo.
+
+        - background-position: A propriedade CSS background-position define a posição inicial para cada imagem de fundo. A posição é relativa à posição da camada definida pela background-origin.
+
+                            - Sintaxe
+
+                                 - background-position: top;
+
+                                 - background-position: left;
+
+                                 - background-position: center;
+
+                                 - background-position: 25% 75%;
+
+                                 - background-position: bottom 50px right 100px;
+
+                                 - background-position: right 35% bottom 45%;
+
+                            - Valores
+
+                                 - position: Uma posição define uma coordenada x / y, para colocar um item em relação às bordas da caixa de um elemento. Ele pode ser definido usando um a quatro valores. Se dois valores não-palavra-chave forem usados, o primeiro valor representa a posição horizontal e o segundo representa a posição vertical. Se apenas um valor for especificado, o segundo valor será considerado o centro. Se três ou quatro valores forem usados, os valores de porcentagem de comprimento são deslocamentos para os valores de palavra-chave anteriores.
+
+        - background-repeat: A propriedade CSS background-repeat define como as imagens de fundo são repetidas. Uma imagem de fundo pode ser repetida ao longo dos eixos horizontal e vertical ou nem mesmo ser repetida.
+
+                            - Sintaxe
+
+                                 - background-repeat: repeat-x;
+
+                                 - background-repeat: repeat;
+
+                                 - background-repeat: space;
+
+                                 - background-repeat: round;
+
+                                 - background-repeat: no-repeat;
+
+                                 - background-repeat: space repeat;
+
+                            - Valores
+
+                                 - repeat-style: A sintaxe de um valor é uma abreviatura para a sintaxe completa de dois valores:
+
+                                                        Valor único                   Equivalente de dois valores
+                                    
+                                                     -  repeat-x:                     repeat no-repeat
+
+                                                     -  repeat-y:                     no-repeat repeat
+
+                                                     -  repeat:                       repeat repeat
+
+                                                     -  space:                        space space
+
+                                                     -  round:                        round round
+
+                                                     -  no-repeat:                    no-repeat no-repeat
+
+                                  Na sintaxe de dois valores, o primeiro valor representa o comportamento de repetição horizontal e o segundo valor representa o comportamento vertical. Aqui está uma explicação de como cada opção funciona para qualquer direção:
+
+                                      - repeat: A imagem é repetida o quanto for necessário para cobrir toda a área de pintura da imagem de fundo. A última imagem será cortada se não couber;
+
+                                      - space: A imagem é repetida tanto quanto possível sem cortes. A primeira e a última imagens são fixadas em ambos os lados do elemento e os espaços em branco são distribuídos uniformemente entre as imagens. A propriedade background-position é ignorada, a menos que apenas uma imagem possa ser exibida sem recorte. O único caso em que ocorre o recorte usando espaço é quando não há espaço suficiente para exibir uma imagem;
+
+                                      - round: À medida que o espaço permitido aumenta de tamanho, as imagens repetidas irão se esticar (sem deixar lacunas) até que haja espaço (espaço restante> = metade da largura da imagem) para que outra seja adicionada. Quando a próxima imagem é adicionada, todas as atuais são comprimidas para dar espaço;
+
+                                      - no-repeat: A imagem não é repetida (e, portanto, a área de pintura da imagem de fundo não será necessariamente totalmente coberta). A posição da imagem de fundo não repetida é definida pela propriedade CSS background-position.
+
+      - background-size: A propriedade CSS background-size define o tamanho da imagem de fundo do elemento. A imagem pode ser deixada em seu tamanho natural, esticada ou restringida para caber no espaço disponível. Os espaços não cobertos por uma imagem de fundo são preenchidos com a propriedade background-color, e a cor de fundo será visível atrás das imagens de fundo que têm transparência / translucidez.
+
+                               - Sintaxe
+
+                                   - background-size: contain;
+
+                                   - background-size: cover;
+
+                                   - background-size: auto;
+
+                                   - background-size: 30%;
+
+                                   - background-size: 200px 100px;
+
+                               - Valores
+
+                                   - contain: Dimensiona a imagem o maior possível dentro de seu contêiner sem cortá-la ou esticá-la. Se o contêiner for maior do que a imagem, isso resultará em uma imagem lado a lado, a menos que a propriedade background-repeat seja definida como sem repetição;
+                                   
+                                   - cover: Dimensiona a imagem o máximo possível para preencher o contêiner, esticando a imagem se necessário. Se as proporções da imagem diferirem do elemento, ela é cortada vertical ou horizontalmente para que nenhum espaço vazio permaneça;
+                                  
+                                   - auto: Dimensiona a imagem de fundo na direção correspondente de forma que suas proporções intrínsecas sejam mantidas;
+
+                                   - <length>: Estica a imagem na dimensão correspondente ao comprimento especificado. Valores negativos não são permitidos;
+                                   
+                                   - <percentage>: Estica a imagem na dimensão correspondente para a porcentagem especificada da área de posicionamento do plano de fundo. A área de posicionamento do fundo é determinada pelo valor da origem do fundo (por padrão, a caixa de preenchimento). No entanto, se o valor de fixação do fundo do plano de fundo for fixo, a área de posicionamento será, em vez disso, toda a janela de exibição. Valores negativos não são permitidos.
+*/
+
+/* font
+
+    A propriedade abreviada do CSS da fonte define todas as diferentes propriedades da fonte de um elemento. Como alternativa, ele define a fonte de um elemento para uma fonte do sistema.
+
+    Sintaxe
+
+      - font-style: italic;
+
+      - font-weight: bold;
+
+      - font-size: .8em;
+
+      - line-height: 1.2;
+
+      - font-family: Arial, sans-serif;
+      
+      - font: italic bold .8em/1.2 Arial, sans-serif;
+
+    Esta propriedade é uma abreviatura para as seguintes propriedades CSS:
+
+      - font-family: A propriedade CSS font-family especifica uma lista priorizada de um ou mais nomes de famílias de fontes e / ou nomes de família genéricos para o elemento selecionado. Os valores
+                     são separados por vírgulas para indicar que são alternativas. O navegador selecionará a primeira fonte da lista que está instalada.
+
+                               - Sintaxe
+
+                                   - font-family: Georgia, serif;
+
+                                   - font-family: "Gill Sans", sans-serif;
+
+                                   - font-family: sans-serif;
+
+                                   - font-family: serif;
+
+                                   - font-family: cursive;
+
+                                   - font-family: system-ui;
+
+                               - Valores
+
+                                   - <family-name>: O nome de uma família de fontes. Por exemplo, "Times" e "Helvetica" são famílias de fontes. Os nomes de família de fontes contendo espaços em 
+                                                    branco devem ser citados;
+                                   
+                                   - <generic-name>: As famílias de fontes genéricas são um mecanismo de fallback, um meio de preservar algumas das intenções do autor da folha de estilo quando
+                                                     nenhuma das fontes especificadas está disponível. Sobrenomes genéricos são palavras-chave e não devem ser citados. Uma família de fontes genérica
+                                                     deve ser o último item na lista de nomes de famílias de fontes. As seguintes palavras-chave são definidas:
+
+                                                         - serif;
+
+                                                         - sans-serif;
+
+                                                         - monospace;
+
+                                                         - cursive;
+
+                                                         - fantasy;
+
+                                                         - system-ui;
+
+                                                         - ui-serif;
+
+                                                         - ui-sans-serif;
+
+                                                         - ui-monospace;
+
+                                                         - ui-rounded;
+
+                                                         - math;
+
+                                                         - emoji;
+
+                                                         - fangsong.
+
+      - font-size: A propriedade CSS font-size define o tamanho da fonte. Alterar o tamanho da fonte também atualiza os tamanhos das unidades <comprimento> relativas ao tamanho da fonte, como em, ex
+                   e assim por diante.
+
+                               - Sintaxe
+
+                                   - font-size: 1.2em;
+
+                                   - font-size: x-small;
+
+                                   - font-size: smaller;
+
+                                   - font-size: 12px;
+
+                                   - font-size: 80%;
+
+                               - Valores
+
+                                   - xx-small, x-small, small, medium, large, x-large, xx-large, xxx-large: Palavras-chave de tamanho absoluto, com base no tamanho da fonte padrão do usuário.
+                                   
+                                   - larger, smaller: Palavras-chave de tamanho relativo. A fonte será maior ou menor em relação ao tamanho da fonte do elemento pai, aproximadamente pela proporção
+                                                      usada para separar as palavras-chave de tamanho absoluto acima.
+
+                                   - <length>: Um valor <length> positivo. Para a maioria das unidades relativas à fonte (como em e ex), o tamanho da fonte é relativo ao tamanho da fonte do elemento
+                                               pai. Para unidades relativas à fonte baseadas na raiz (como rem), o tamanho da fonte é relativo ao tamanho da fonte usada pelo elemento <html> (raiz).
+
+                                   - <percentage>: Um valor <percentage> positivo, relativo ao tamanho da fonte do elemento pai.
+
+
+
+                                  
+                                  
+  
+*/

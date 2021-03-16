@@ -317,111 +317,59 @@
 
 <!-- CAPTION, COL, COLGROUP, TABLE, THEAD, TBODY, TFOOT, TR, TH e TD
 
-    O Elemento HTML <caption> (ou Elemento HTML Subtitulo de Tabela) representa o título de uma tabela. Embora ele seja sempre o primeiro filho de um <table>, seu estilo, usando CSS pode colocar ele
-    em qualquer lugar relativo a tabela.
+    O Elemento HTML <caption> (ou Elemento HTML Subtitulo de Tabela) representa o título de uma tabela. Embora ele seja sempre o primeiro filho de um <table>, seu estilo, usando CSS pode colocar ele em qualquer lugar relativo a tabela.
 
-
-
-
-
-    O elemento HTML <col> define uma tabela contendo colunas e sendo utilizada para definições semanticas em todas as colunas comuns. É normalmente encontrada dentro do elemento("colgroup")}}. Este
-    elemento permite a estilização de colunas utilizando-se do CSS, porém apenas um numero pequeno de atributos que terão efeito dentro das colunas (veja as especificações do CSS 2.1 a partir dessa lista).
-
-
-
-
+    O elemento HTML <col> define uma tabela contendo colunas e sendo utilizada para definições semanticas em todas as colunas comuns. É normalmente encontrada dentro do elemento("colgroup")}}. Este elemento permite a estilização de colunas utilizando-se do CSS, porém apenas um numero pequeno de atributos que terão efeito dentro das colunas (veja as especificações do CSS 2.1 a partir dessa lista).
 
     O elemento HTML <colgroup> define um grupo de colunas em uma tabela.
     
     Atributos: 
+
         - span: Este atributo contém um número inteiro positivo indicando o número de colunas consecutivas que o elemento <colgroup> abrange. Se não estiver presente, seu valor padrão é 1.
-
-
-
-
 
     O elemento HTML Table (<table>) representa dados em duas dimensões ou mais.
     
-
-
-
-    
     O elemento HTML <thead> define um conjunto de linhas que definem o cabeçalho das colunas da tabela.
-
-
-
-
 
     O <tfoot> é um elemento HTML que define um conjunto de linhas as quais farão parte do rodapé de uma tabela HTML.
     
-        
+    O elemento HTML Table Body (<tbody>) encapsula um conjunto de linhas da tabela (elementos <tr>), indicando que eles compreendem o corpo da tabela (<table>). O elemento <tbody>, junto com seus primos <thead> e <tfoot>, fornecem informações semânticas úteis que podem ser usadas ao renderizar para tela ou impressora, bem como para fins de acessibilidade. Se a tabela incluir um bloco <thead> (para identificar semanticamente as linhas do cabeçalho), o bloco <tbody> deve vir depois dela. Se você usar <tbody>, você não pode ter linhas de tabela (elementos <tr>) que são filhos diretos de <table>, mas não incluídos dentro de <tbody>. Todas as linhas que não sejam de cabeçalho e de rodapé devem estar dentro de <tbody> se alguma for usada. Ao imprimir um documento, os elementos <thead> e <tfoot> especificam informações que podem ser as mesmas - ou pelo menos muito semelhantes - em cada página de uma tabela de várias páginas, enquanto o conteúdo do elemento <tbody> geralmente difere da página até à página. Quando uma tabela é apresentada em um contexto de tela (como uma janela) que não é grande o suficiente para exibir a tabela inteira, o agente do usuário pode permitir que o usuário role o conteúdo de <thead>, <tbody>, <tfoot>, e blocos <caption> separadamente um do outro para a mesma tabela pai. Você pode usar mais de um <tbody> por mesa, desde que sejam todos consecutivos. Isso permite dividir as linhas em tabelas grandes em seções, cada uma das quais pode ser formatada separadamente, se desejado.
 
-
-
-    O elemento HTML Table Body (<tbody>) encapsula um conjunto de linhas da tabela (elementos <tr>), indicando que eles compreendem o corpo da tabela (<table>). O elemento <tbody>, junto com seus
-    primos <thead> e <tfoot>, fornecem informações semânticas úteis que podem ser usadas ao renderizar para tela ou impressora, bem como para fins de acessibilidade. Se a tabela incluir um bloco
-    <thead> (para identificar semanticamente as linhas do cabeçalho), o bloco <tbody> deve vir depois dela. Se você usar <tbody>, você não pode ter linhas de tabela (elementos <tr>) que são filhos
-    diretos de <table>, mas não incluídos dentro de <tbody>. Todas as linhas que não sejam de cabeçalho e de rodapé devem estar dentro de <tbody> se alguma for usada. Ao imprimir um documento, os
-    elementos <thead> e <tfoot> especificam informações que podem ser as mesmas - ou pelo menos muito semelhantes - em cada página de uma tabela de várias páginas, enquanto o conteúdo do elemento
-    <tbody> geralmente difere da página até à página. Quando uma tabela é apresentada em um contexto de tela (como uma janela) que não é grande o suficiente para exibir a tabela inteira, o agente
-    do usuário pode permitir que o usuário role o conteúdo de <thead>, <tbody>, <tfoot>, e blocos <caption> separadamente um do outro para a mesma tabela pai. Você pode usar mais de um <tbody> por
-    mesa, desde que sejam todos consecutivos. Isso permite dividir as linhas em tabelas grandes em seções, cada uma das quais pode ser formatada separadamente, se desejado.
-
-
-
-
-
-    O elemento HTML <tr> define uma linha de células em uma tabela. As células da linha podem então ser estabelecidas usando uma combinação de elementos <td> (célula de dados) e <th> (célula de
-    cabeçalho). 
+    O elemento HTML <tr> define uma linha de células em uma tabela. As células da linha podem então ser estabelecidas usando uma combinação de elementos <td> (célula de dados) e <th> (célula de cabeçalho). 
     
-
-
-
-
-
     O elemento HTML <th> define o cabeçalho de uma célula do grupo de células de sua tabela. Aidão natural deste grupo é denifida pelos atributos scope e headers.
     
     Atributos:
 
-        - abbr: Este atributo contém uma breve descrição do conteúdo da célula. Alguns usuários-agentes, como leitores, pode apresentar essa descrição antes do próprio conteúdo.
+        - abbr: Este atributo contém uma breve descrição do conteúdo da célula. Alguns usuários-agentes, como leitores, pode apresentar essa descrição antes do próprio conteúdo;
 
-        - colspan: Este atributo contém um valor inteiro não negativo que indica quantas colunas a célula ocupará. Valor padrão 1. Valores acima de 1000 são considerados incorretos e serão
-                   modificados para o valor padrão 1;
+        - colspan: Este atributo contém um valor inteiro não negativo que indica quantas colunas a célula ocupará. Valor padrão 1. Valores acima de 1000 são considerados incorretos e serão modificados para o valor padrão 1;
 
         - headers: Este atributo contém uma lista de palavras separadas por espaço, cada uma correspondendo ao atributo id dos elementos <th> que se aplicam a este elemento;
 
-        - rowspan: Este atributo contém um valor inteiro não negativo que indica quantas linhas a célula estende. Valor padrão 1. Se seu valor é definido como 0, ele se estende até o final da tabela
-                   (<thead>, <tbody>, <tfoot>, mesmo que implicitamente definido), que a célula pertence. Não é possível colocar valores superiores a 65534.
+        - rowspan: Este atributo contém um valor inteiro não negativo que indica quantas linhas a célula estende. Valor padrão 1. Se seu valor é definido como 0, ele se estende até o final da tabela (<thead>, <tbody>, <tfoot>, mesmo que implicitamente definido), que a célula pertence. Não é possível colocar valores superiores a 65534;
                     
         - scope: Este atributo define as células a que o cabeçalho (definido no elemento <th>) se relaciona. Possíveis valores:
 
-            
-                 - row: O cabeçalho se relaciona com todas as células da linha a que pertence;
+                - row: O cabeçalho se relaciona com todas as células da linha a que pertence;
 
-                 - col: O cabeçalho se relaciona com todas as células da coluna a que pertence;
+                - col: O cabeçalho se relaciona com todas as células da coluna a que pertence;
 
-                 - rowgroup: O cabeçalho pertence a um grupo de linhas e se relaciona com todas as suas células. Essas células podem ser colocadas à direita ou à esquerda do cabeçalho, dependendo do
-                             valor do atributo dir no elemento <table>;
+                - rowgroup: O cabeçalho pertence a um grupo de linhas e se relaciona com todas as suas células. Essas células podem ser colocadas à direita ou à esquerda do cabeçalho, dependendo do valor do atributo dir no elemento <table>;
 
-                 - colgroup: O cabeçalho pertence a um grupo de colgroup e se relaciona com todas as suas células;
+                - colgroup: O cabeçalho pertence a um grupo de colgroup e se relaciona com todas as suas células;
 
-                 - auto: O valor padrão quando este atributo não é especificado é auto.
-
-
-
-
+                - auto: O valor padrão quando este atributo não é especificado é auto;
 
     O elemento HTML <td> define uma célula de uma tabela que contém dados. Participa do modelo de mesa.
 
     Atributos:
 
-        - colspan: Este atributo contém um valor inteiro não negativo que indica quantas colunas a célula ocupará. Valor padrão 1. Valores acima de 1000 são considerados incorretos e serão
-                   modificados para o valor padrão 1;
+        - colspan: Este atributo contém um valor inteiro não negativo que indica quantas colunas a célula ocupará. Valor padrão 1. Valores acima de 1000 são considerados incorretos e serão modificados para o valor padrão 1;
 
         - headers: Este atributo contém uma lista de palavras separadas por espaço, cada uma correspondendo ao atributo id dos elementos <th> que se aplicam a este elemento;
 
-        - rowspan: Este atributo contém um valor inteiro não negativo que indica quantas linhas a célula estende. Valor padrão 1. Se seu valor é definido como 0, ele se estende até o final da tabela
-                   (<thead>, <tbody>, <tfoot>, mesmo que implicitamente definido), que a célula pertence. Não é possível colocar valores superiores a 65534.
+        - rowspan: Este atributo contém um valor inteiro não negativo que indica quantas linhas a célula estende. Valor padrão 1. Se seu valor é definido como 0, ele se estende até o final da tabela (<thead>, <tbody>, <tfoot>, mesmo que implicitamente definido), que a célula pertence. Não é possível colocar valores superiores a 65534.
 -->
 
 <!-- FIM CONTEÚDO TABULADO -->
