@@ -1,3 +1,340 @@
+/* Exemplos Seletores Básicos */
+
+
+
+/* Exemplo Seletor por Elemento */
+span {
+    background-color: skyblue;
+}
+
+a {
+    color: red;
+}
+
+a.cor-tag-a{
+    color: brown;
+}
+
+a, p {
+    color: coral;
+}
+
+ul li {
+    color: darkgreen;
+}
+
+
+
+/* Exemplo Seletor de Elementos */
+.vermelho {
+    color: #f33;
+}
+
+.amarelo-bg {
+    background: #ffa;
+}
+
+.class-verde.class-margin-top{
+    padding: 5rem;
+}
+
+.class-azul .class-margin-bottom{
+    padding: 5rem;
+}
+
+
+
+/* Exemplo Seletor de IDs */
+#identificado {
+    background-color: DodgerBlue;
+}
+
+#verde {
+    background-color: greenyellow;
+}
+
+
+
+/* Exemplo Seletor Universais */
+* {
+    background-color: DodgerBlue;
+}
+
+* {
+    margin-top: 1rem;
+}
+
+
+
+/* Exemplo Seletor de Atributos */
+a[target] {
+    background-color: yellow;
+}
+
+a[target="_blank"] {
+    background-color: yellow;
+}
+
+[title~="flower"] {
+    background-color: yellow;
+}
+
+[lang|="en"] {
+    background-color: yellow;
+}
+
+div[class^="test"] {
+    background: #ffff00;
+}
+
+div[class$="test"] {
+    background: #ffff00;
+}
+
+div[class*="test"] {
+    background: #ffff00;
+}
+
+
+
+
+
+
+
+
+
+
+/* Exemplos Combinadores */
+
+
+
+/* Exemplo Seletor de Irmãos Adjacentes */
+div + p {
+    background-color: yellow;
+}  
+
+div + span {
+    margin-top: 5rem;
+}
+
+
+
+/* Exemplo Seletor Gerais de Irmãos */
+p ~ span {
+    color: red;
+}
+
+p ~ ul {
+    background: #ff0000;
+}
+
+
+
+/* Exemplo Seletor de Filhos */
+div > p {
+    background-color: yellow;
+}
+
+ul > li {
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* Exemplo Pseudo-classes */
+
+
+
+a:active {
+    background-color: yellow;
+}
+
+input:checked {
+    height: 50px;
+    width: 50px;
+}
+
+input:default {
+    box-shadow: 0 0 1px 1px red;
+}
+
+input[type="text"]:disabled {
+    background: #dddddd;
+}
+
+p:empty {
+    background: #ff0000;
+}
+
+input[type="text"]:enabled {
+    background: #ffff00;
+}
+
+p:first-child {
+    background-color: yellow;
+}
+
+p:first-of-type {
+    background: red;
+}
+
+input:focus {
+    background-color: yellow;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+input:in-range {
+    border: 2px solid yellow;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+p:lang(pt) {
+    background: yellow;
+}
+
+p:last-child {
+    background: #ff0000;
+}
+
+p:last-of-type {
+    background: #ff0000;
+}
+
+a:link {
+    background-color: yellow;
+}
+
+:not(p) {
+    background: #ff0000;
+}
+
+p:nth-child(2) {
+    background: red;
+}
+
+p:nth-last-child(2) {
+    background: red;
+}
+
+p:nth-last-of-type(2) {
+    background: red;
+}
+
+p:nth-of-type(2) {
+    background: red;
+}
+
+p:only-child {
+    background: #ff0000;
+}
+
+p:only-of-type {
+    background: #ff0000;
+}
+
+input:optional {
+    background-color: yellow;
+}
+
+input:out-of-range {
+    border: 2px solid red;
+}
+
+input:read-only {
+    background-color: yellow;
+}
+
+input:read-write {
+    background-color: yellow;
+}
+
+input:required {
+    background-color: yellow;
+}
+
+:root {
+    background: #ff0000;
+}
+
+:target {
+    border: 2px solid #D4D4D4;
+    background-color: #e5eecc;
+}
+
+input:valid {
+    background-color: yellow;
+}
+
+a:visited {
+    color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+/* Exemplo Pseudo-elementos */
+
+
+
+p::after {
+    content: " - Remember this";
+}
+
+p::before {
+    content: "Read this: ";
+}
+
+p::first-letter {
+    font-size: 200%;
+    color: #8A2BE2;
+}
+
+p::first-line {
+    background-color: yellow;
+}
+
+::selection {
+    color: red;
+    background: yellow;
+}
+
+::placeholder {
+    color: red;
+}
+
+::marker {
+    color: blue;
+    font-size: 1.2em;
+}
+
+::spelling-error  {
+    text-decoration: wavy red;
+}
+
+::grammar-error  {
+    text-decoration: underline red;
+    color: red;
+}
+
 /* Seletores CSS
 
     Os Seletores definem quais elementos um conjunto de regras CSS se aplica.
@@ -8,92 +345,65 @@
 
     - Seletor de Elemento
 
-        O seletor de tipo CSS corresponde aos elementos pelo nome do nó. Em outras palavras, ele seleciona todos os elementos do tipo fornecido em um documento.
+        O seletor de tipo CSS corresponde aos elementos pelo nome do nó. Em outras palavras, ele seleciona todos os elementos do tipo fornecido em um documento. Tambem temos o que seleciona todos os elementos com a tag elemento_nome e  .classe_nome. Temos o que seleciona todos os elementos elemento_nome e todos os elemento_nome2. E temos o que seleciona todos os elementos elemento_nome2 dentro dos elementos elemento_nome.
 
-        Tambem temos o que seleciona todos os elementos com a tag elemento_nome e  .classe_nome.
+            Sintaxe
 
-        Temos o que seleciona todos os elementos elemento_nome e todos os elemento_nome2.
+                - elemento_nome { propriedades de estilo }
 
-        E temos o que seleciona todos os elementos elemento_nome2 dentro dos elementos elemento_nome.
+                - elemento_nome.classe_nome { propriedades de estilo }
 
-        Sintaxe
+                - elemento_nome, elemento_nome2 { propriedades de estilo }
 
-            - elemento_nome { propriedades de estilo }
-
-            - elemento_nome.classe_nome { propriedades de estilo }
-
-            - elemento_nome, elemento_nome2 { propriedades de estilo }
-
-            - elemento_nome elemento_nome2 { propriedades de estilo }
-
-
-
-
+                - elemento_nome elemento_nome2 { propriedades de estilo }
 
     - Seletor de Classe
 
-        O seletor de classes CSS corresponde aos elementos com base no conteúdo de seus atributos class.
+        O seletor de classes CSS corresponde aos elementos com base no conteúdo de seus atributos class. Tambem temos o que seleciona todos os elementos com .classe_nome e .classe_nome2 definidos em seu atributo de classe. E temos o que seleciona todos os elementos com .classe_nome2 que são descendentes de um elemento com .classe_nome.
 
-        Tambem temos o que seleciona todos os elementos com .classe_nome e .classe_nome2 definidos em seu atributo de classe.
+            Sintaxe
 
-        E temos o que seleciona todos os elementos com .classe_nome2 que são descendentes de um elemento com .classe_nome.
+                - .classe_nome{ propriedades de estilo }
 
-        Sintaxe
+                - .classe_nome.classe_nome2 { propriedades de estilo }
 
-            - .classe_nome{ propriedades de estilo }
-
-            - .classe_nome.classe_nome2 { propriedades de estilo }
-
-            - .classe_nome. classe_nome { propriedades de estilo }
-
-
-
-
+                - .classe_nome. classe_nome { propriedades de estilo }
 
     - Seletor de ID
 
         Em um documento HTML, os seletores de ID do CSS selecionam um elemento baseado no conteúdo de seu atributo id,  o qual deve ser exatamente igual ao valor dado ao seletor.
 
-        Sintaxe
+            Sintaxe
 
-            - #id_nome { propriedades de estilo }
+                - #id_nome { propriedades de estilo }
     
-    
-
-
-
     - Seletor Universal
 
         O seletor universal do CSS (*) aplica estilos a elementos de qualquer tipo.
 
-        Sintaxe
+            Sintaxe
 
-            - * { propriedades de estilo }
+                - * { propriedades de estilo }
     
-    
-    
-
-
     - Seletor de Atributo
 
         O seletor de atributos combina elementos baseado no valor de um atributo dado.
 
-        Sintaxe
+            Sintaxe
 
-            - tag[attr]: Representa um elemento com atributo de nome attr;
+                - tag[attr]: Representa um elemento com atributo de nome attr;
 
-            - tag[attr=value]: Representa um elemento com um atributo de nome attr, o qual o valor é exatamente  value;
+                - tag[attr=value]: Representa um elemento com um atributo de nome attr, o qual o valor é exatamente  value;
 
-            - tag[attr~=value]: Representa um elemento com um atributo de nome attr, o qual value é uma lista de palavras separadas por espaços, e uma dessas é exatamente  value;
+                - tag[attr~=value]: Representa um elemento com um atributo de nome attr, o qual value é uma lista de palavras separadas por espaços, e uma dessas é exatamente  value;
 
-            - tag[attr|=value]: Representa um elemento com um atributo de nome attr  o qual o valor pode ser exatamente value ou pode começar com value imediatamente seguido por hífen -. Isso somente
-                                é usado para linguagens que combinam sub-códigos;
-            
-            - tag[attr^=value]: Representa um elemento com um atributo com nome attr que tem um valor prefixado (precedido) por value;
+                - tag[attr|=value]: Representa um elemento com um atributo de nome attr  o qual o valor pode ser exatamente value ou pode começar com value imediatamente seguido por hífen -. Isso somente é usado para linguagens que combinam sub-códigos;
+                
+                - tag[attr^=value]: Representa um elemento com um atributo com nome attr que tem um valor prefixado (precedido) por value;
 
-            - tag[attr$=value]: Representa um elemento com um atributo de nome attr que  tem como sufixo (seguido) por value;
+                - tag[attr$=value]: Representa um elemento com um atributo de nome attr que  tem como sufixo (seguido) por value;
 
-            - tag[attr*=value]: Representa um elemento com um atributo de nome attr o qual valor contém ao menos uma ocorrência de value contido na string.
+                - tag[attr*=value]: Representa um elemento com um atributo de nome attr o qual valor contém ao menos uma ocorrência de value contido na string.
 
 */
 
@@ -103,214 +413,180 @@
 
         O combinador + seleciona os nós que seguem imediatamente o elemento especificado anteriormente.
 
-        Sintaxe
+            Sintaxe
 
-            - elemento1 + elemento2 { propriedades de estilo }
-
-
-
-
+                - elemento1 + elemento2 { propriedades de estilo }
 
     - Seletor Gerais de Irmãos
 
         O combinador ~ seleciona os nós que seguem (não necessariamente imediatamente) o elemento especificado anteriormente, se ambos os elementos compartilham o mesmo pai. 
 
-        Sintaxe
+            Sintaxe
 
-            - elemento1 ~ elemento2 { propriedades de estilo }
-
-    
-
-
+                - elemento1 ~ elemento2 { propriedades de estilo }
 
     - Seletor de Filhos
 
         O combinador > selecina nós que são filhos diretos do elemento especificado anteriormente.
 
-        Sintaxe
+            Sintaxe
 
-            - elemento1 + elemento2 { propriedades de estilo }
+                - elemento1 + elemento2 { propriedades de estilo }
 
 */
 
 /* Pseudo-classes
 
-    Uma pseudo-classe CSS é uma palavra-chave adicionada a seletores que especifica um estado especial do elemento selecionado. Por exemplo, :hover pode ser usado para alterar a cor de um botão quando
-    o usuário passar o cursor sobre ele. Pseudo-classes permitem que você aplique um estilo a um elemento não apenas em relação ao conteúdo da árvore do documento, mas também em relação a fatores
-    externos como o histórico de navegação (:visited, por exemplo), o status do seu conteúdo (como :checked em certos elementos de um formulário), ou a posição do mouse (como :hover, que permite
-    saber se o mouse está sobre um elemento ou não).
+    Uma pseudo-classe CSS é uma palavra-chave adicionada a seletores que especifica um estado especial do elemento selecionado. Por exemplo, :hover pode ser usado para alterar a cor de um botão quando o usuário passar o cursor sobre ele. Pseudo-classes permitem que você aplique um estilo a um elemento não apenas em relação ao conteúdo da árvore do documento, mas também em relação a fatores externos como o histórico de navegação (:visited, por exemplo), o status do seu conteúdo (como :checked em certos elementos de um formulário), ou a posição do mouse (como :hover, que permite saber se o mouse está sobre um elemento ou não).
 
-    Sintaxe
+        Sintaxe
 
-        -   elemento:pseudo-classe { propriedades de estilo }
+            -   elemento:pseudo-classe { propriedades de estilo }
 
-    Índice de Pseudo-classes Padrão
+        Índice de Pseudo-classes Padrão
 
-        - :active: Seleciona o link ativo;
+            - :active: Seleciona o link ativo;
 
-        - :checked: A pseudo-classe :checked de um seletor CSS representa um elemento radio (<input type="radio">), checkbox (<input type="checkbox">) ou option (<option> em um <select>)  que está
-                    marcada ou alternado para um estado ligado. O usuário pode mudar seu estado clicando no elemento, ou selecionando um valor diferente, nesse caso a pseudo-classe :checked não se
-                    aplica a esse elemento, mas vai para um elemento relevante;
+            - :checked: A pseudo-classe :checked de um seletor CSS representa um elemento radio (<input type="radio">), checkbox (<input type="checkbox">) ou option (<option> em um <select>)  que está marcada ou alternado para um estado ligado. O usuário pode mudar seu estado clicando no elemento, ou selecionando um valor diferente, nesse caso a pseudo-classe :checked não se aplica a esse elemento, mas vai para um elemento relevante;
 
-        - :default: A pseudo classe CSS: default seleciona os elementos do formulário que são o padrão em um grupo de elementos relacionados;
-        
-        - :disabled: A pseudo-classe CSS  :disabled representa qualquer elemento desativado. Um elemento é desativado se não puder ser ativado (selecionado, clicado, digitado etc.) ou aceitar o foco.
-                     O elemento também possui um estado habilitado, no qual ele pode ser ativado ou aceitar o foco;
+            - :default: A pseudo classe CSS: default seleciona os elementos do formulário que são o padrão em um grupo de elementos relacionados;
+            
+            - :disabled: A pseudo-classe CSS  :disabled representa qualquer elemento desativado. Um elemento é desativado se não puder ser ativado (selecionado, clicado, digitado etc.) ou aceitar o foco. O elemento também possui um estado habilitado, no qual ele pode ser ativado ou aceitar o foco;
 
-        - :empty: A pseudo-classe CSS :empty representa qualquer elemento que não tenha filhos. Aqui, filhos podem ser outros elementos ou blocos de texto (incluindo espaços em branco). Comentários e
-                  instruções de processamento não são considerados ao se determinar se um elemento é vazio;
+            - :empty: A pseudo-classe CSS :empty representa qualquer elemento que não tenha filhos. Aqui, filhos podem ser outros elementos ou blocos de texto (incluindo espaços em branco). Comentários e instruções de processamento não são considerados ao se determinar se um elemento é vazio;
 
-        - :enabled: A pseudo-classe CSS  :enabled representa qualquer elemento ativado. Um elemento é ativado se puder ser ativado (selecionado, clicado, digitado etc.) ou aceitar o foco. O elemento
-                    também possui um estado desativado, no qual não pode ser ativado nem aceitar foco;
+            - :enabled: A pseudo-classe CSS  :enabled representa qualquer elemento ativado. Um elemento é ativado se puder ser ativado (selecionado, clicado, digitado etc.) ou aceitar o foco. O elemento também possui um estado desativado, no qual não pode ser ativado nem aceitar foco;
 
-        - :first-child: A pseudo-classe de CSS :first-child representa qualquer elemento que seja o primeiro filho de seus pais;
+            - :first-child: A pseudo-classe de CSS :first-child representa qualquer elemento que seja o primeiro filho de seus pais;
 
-        - :first-of-type: A CSS pseudo-classe :first-of-type representa o primeiro elemento de seu tipo entre os filhos de seu elemento pai;
+            - :first-of-type: A CSS pseudo-classe :first-of-type representa o primeiro elemento de seu tipo entre os filhos de seu elemento pai;
 
-        - :focus: A pseudo-classe :focus do CSS é aplicada quando um elemento recebe foco, o que pode ocorrer quando o usuário seleciona o elemento utilizando o teclado ou ativando o mesmo com o
-                  mouse (ex: um campo de um formulário);
+            - :focus: A pseudo-classe :focus do CSS é aplicada quando um elemento recebe foco, o que pode ocorrer quando o usuário seleciona o elemento utilizando o teclado ou ativando o mesmo com o mouse (ex: um campo de um formulário);
 
-        - :hover: A pseudo-classe :hover corresponde quando o usuário designa um elemento com um dispositivo apontador, mas não necessariamente o ativa;
+            - :hover: A pseudo-classe :hover corresponde quando o usuário designa um elemento com um dispositivo apontador, mas não necessariamente o ativa;
 
-        - :in-range: A pseudoclasse CSS: in-range representa um elemento <input> cujo valor atual está dentro dos limites de intervalo especificados pelos atributos min e max;
+            - :in-range: A pseudoclasse CSS: in-range representa um elemento <input> cujo valor atual está dentro dos limites de intervalo especificados pelos atributos min e max;
 
-        - :invalid: A pseudo-classe CSS :invalid representa qualquer elemento <input> ou <form> cujo conteúdo não esteja válido;
+            - :invalid: A pseudo-classe CSS :invalid representa qualquer elemento <input> ou <form> cujo conteúdo não esteja válido;
 
-        - :lang(): A pseudo classe CSS :lang() faz a correspondência de elementos com base no idioma em que eles estão determinados;
+            - :lang(): A pseudo classe CSS :lang() faz a correspondência de elementos com base no idioma em que eles estão determinados;
 
-        - :last-child: A CSS pseudo-classe :last-child representa qualquer elemento que é o último filho de seu elemento pai;
+            - :last-child: A CSS pseudo-classe :last-child representa qualquer elemento que é o último filho de seu elemento pai;
 
-        - :last-of-type: A CSS pseudo-class :last-of-type representa o último irmão com o nome de elemento dado na lista de filhos de seu elemento pai;
+            - :last-of-type: A CSS pseudo-class :last-of-type representa o último irmão com o nome de elemento dado na lista de filhos de seu elemento pai;
 
-        - :link: A pseudo-class CSS :link permite que você selecione os links dentro de um elemento. Ela seleciona todos os links, até mesmo os que não foram visitados, incluindo os links ja
-                 estilizados em outras classes ou ids com o :hover, :active ou :visited. Para um funcionamento adequado é essencial que ela venha antes das regras: :visited — :hover — :active.
-                O :focus é uma pseudo-class geralmente usada antes de a:hover ou depois, dependendo do resultado esperado;
+            - :link: A pseudo-class CSS :link permite que você selecione os links dentro de um elemento. Ela seleciona todos os links, até mesmo os que não foram visitados, incluindo os links ja estilizados em outras classes ou ids com o :hover, :active ou :visited. Para um funcionamento adequado é essencial que ela venha antes das regras: :visited — :hover — :active. O :focus é uma pseudo-class geralmente usada antes de a:hover ou depois, dependendo do resultado esperado;
 
-        - :not(): A pseudo-classe CSS de negação, :not(X), é uma notação funcional que recebe um seletor simples X como argumento. Ela seleciona um elemento que não é representado por seu argumento.
-                  X não pode conter outro seletor de negação;
+            - :not(): A pseudo-classe CSS de negação, :not(X), é uma notação funcional que recebe um seletor simples X como argumento. Ela seleciona um elemento que não é representado por seu argumento. X não pode conter outro seletor de negação;
 
-        - :nth-child(): A pseudo-classe CSS :nth-child() seleciona elementos com base em suas posições em um grupo de elementos irmãos;
+            - :nth-child(): A pseudo-classe CSS :nth-child() seleciona elementos com base em suas posições em um grupo de elementos irmãos;
 
-        - :nth-last-child(): A pseudo-classe CSS :nth-last-child() seleciona um ou mais elementos com base em sua posição entre um grupo de elementos-irmãos, contando a partir do último;
+            - :nth-last-child(): A pseudo-classe CSS :nth-last-child() seleciona um ou mais elementos com base em sua posição entre um grupo de elementos-irmãos, contando a partir do último;
 
-        - :nth-last-of-type(): A: nth-last-of-type () pseudoclasse CSS combina elementos de um determinado tipo, com base em sua posição entre um grupo de irmãos, contando a partir do final;
+            - :nth-last-of-type(): A: nth-last-of-type () pseudoclasse CSS combina elementos de um determinado tipo, com base em sua posição entre um grupo de irmãos, contando a partir do final;
 
-        - :nth-of-type(): A pseudo-classe CSS :nth-of-type() corresponde a um ou mais elementos de um dado tipo, baseado em sua posição entre um grupo de irmãos;
+            - :nth-of-type(): A pseudo-classe CSS :nth-of-type() corresponde a um ou mais elementos de um dado tipo, baseado em sua posição entre um grupo de irmãos;
 
-        - :only-child: A pseudo-classe de CSS :only-child representa um elemento sem nenhum elemento-irmão. É o mesmo que :first-child:last-child ou :nth-child(1):nth-last-child(1), mas com uma
-                       especificidade mais baixa;
+            - :only-child: A pseudo-classe de CSS :only-child representa um elemento sem nenhum elemento-irmão. É o mesmo que :first-child:last-child ou :nth-child(1):nth-last-child(1), mas com uma especificidade mais baixa;
 
-        - :only-of-type: A pseudo-classe CSS :only-of-type  representa qualquer elemento que não possui irmãos de um determinado tipo;
+            - :only-of-type: A pseudo-classe CSS :only-of-type  representa qualquer elemento que não possui irmãos de um determinado tipo;
 
-        - :optional: A pseudo-classe CSS :optional representa qualquer elemento <input>, <select>, ou <textarea> que não contenha o atributo required;
+            - :optional: A pseudo-classe CSS :optional representa qualquer elemento <input>, <select>, ou <textarea> que não contenha o atributo required;
 
-        - :out-of-range: A pseudo classe de CSS :out-of-range representa um elemento de <entrada> cujo valor atual esta fora dos limites especificados pelo min e max atributos;
+            - :out-of-range: A pseudo classe de CSS :out-of-range representa um elemento de <entrada> cujo valor atual esta fora dos limites especificados pelo min e max atributos;
 
-        - :read-only: A pseudoclasse CSS: read-only representa um elemento (como input ou textarea) que não pode ser editado pelo usuário;
+            - :read-only: A pseudoclasse CSS: read-only representa um elemento (como input ou textarea) que não pode ser editado pelo usuário;
 
-        - :read-write: A pseudo-classe CSS :read-write representa um elemento (como o input ou textarea) que é editável pelo usuário;
+            - :read-write: A pseudo-classe CSS :read-write representa um elemento (como o input ou textarea) que é editável pelo usuário;
 
-        - :required: A pseudo-classe CSS :required representa qualquer <input>, <select>, ou <textarea> contendo o atributo required;
+            - :required: A pseudo-classe CSS :required representa qualquer <input>, <select>, ou <textarea> contendo o atributo required;
 
-        - :root: A pseudo-classe CSS  :root se equipara à raíz de uma árvore, que por sua vez representa o documento. Aplicado ao HTML, :root representa o elemento <html>  e é identico ao seletor
-                 html, exceto que sua especificidade é mais alta;
+            - :root: A pseudo-classe CSS  :root se equipara à raíz de uma árvore, que por sua vez representa o documento. Aplicado ao HTML, :root representa o elemento <html>  e é identico ao seletor html, exceto que sua especificidade é mais alta;
 
-        - :scope: A pseudo classe CSS: scope representa elementos que são um ponto de referência para os seletores corresponderem;
+            - :scope: A pseudo classe CSS: scope representa elementos que são um ponto de referência para os seletores corresponderem;
 
-        - :target: A pseudo-classe CSS :target representa um único elemento (o elemento alvo) com uma id correspondente ao fragmento da URL;
+            - :target: A pseudo-classe CSS :target representa um único elemento (o elemento alvo) com uma id correspondente ao fragmento da URL;
 
-        - :valid: A pseudo-classe CSS :valid representa qualquer <input> ou outro elemento do <form> cujo conteúdo foi validado com sucesso. Isso permite, facilmente, adicionar uma aparência que
-                  ajude o usuário a identificar os campos validados;
+            - :valid: A pseudo-classe CSS :valid representa qualquer <input> ou outro elemento do <form> cujo conteúdo foi validado com sucesso. Isso permite, facilmente, adicionar uma aparência que ajude o usuário a identificar os campos validados;
 
-        - :visited: O :visited é uma Pseudo-classe do CSS para indicar se o link em questão já foi visitado pelo usuário. Por questões de privacidade, os styles que podem ser modificados usando este
-                    seletor são muito limitados.
+            - :visited: O :visited é uma Pseudo-classe do CSS para indicar se o link em questão já foi visitado pelo usuário. Por questões de privacidade, os styles que podem ser modificados usando este seletor são muito limitados.
 
 */
 
 /* Pseudo-elementos
 
-    Um pseudo-elemento CSS é uma palavra-chave adicionada a um seletor que permite que você estilize uma parte específica do elemento selecionado. Por exemplo, o pseudo-elemento ::first-line aplica o
-    estilo apenas na primeira linha de um parágrafo. Diferentemente dos pseudo-elementos, pseudo-classes podem ser utilizadas para estilizar um elemento baseado em seu estado. Você pode utilizar 
-    apenas um pseudo-elemento em um seletor. Ele deve aparecer depois da declaração de um elemento simples.
+    Um pseudo-elemento CSS é uma palavra-chave adicionada a um seletor que permite que você estilize uma parte específica do elemento selecionado. Por exemplo, o pseudo-elemento ::first-line aplica o estilo apenas na primeira linha de um parágrafo. Diferentemente dos pseudo-elementos, pseudo-classes podem ser utilizadas para estilizar um elemento baseado em seu estado. Você pode utilizar  apenas um pseudo-elemento em um seletor. Ele deve aparecer depois da declaração de um elemento simples.
 
-    Sintaxe
+        Sintaxe
 
-        - elemento::pseudo-elemento { propriedades de estilo }
+            - elemento::pseudo-elemento { propriedades de estilo }
 
-    Índice de Pseudo-elementos Comuns
+        Índice de Pseudo-elementos Comuns
 
-        - ::after: Em CSS, ::after cria um pseudo-elemento que é o último filho do elemento selecionado. Muitas vezes é usado para adicionar e melhorar o conteúdo de um elemento como a propriedade
-                   content. É inline por padrão;
+            - ::after: Em CSS, ::after cria um pseudo-elemento que é o último filho do elemento selecionado. Muitas vezes é usado para adicionar e melhorar o conteúdo de um elemento como a propriedade content. É inline por padrão;
 
-        - ::before: Em CSS, ::before cria um pseudo-elemento que é o primeiro filho do elemento atingido. É frequentemente utilizado para adicionar conteúdo decorativo à um element utilizando a
-                    propriedade content. Este elemento é inline por padrão;
+            - ::before: Em CSS, ::before cria um pseudo-elemento que é o primeiro filho do elemento atingido. É frequentemente utilizado para adicionar conteúdo decorativo à um element utilizando a propriedade content. Este elemento é inline por padrão;
 
-        - ::first-letter: O ::first-letter CSS pseudo-elemento que seleciona a primeira letra da primeira linha de um bloco, se nçao for procedido por qual outro conteúdo (como imagens ou tableas
-                          embutidas/inline table) na mesma linha;
+            - ::first-letter: O ::first-letter CSS pseudo-elemento que seleciona a primeira letra da primeira linha de um bloco, se nçao for procedido por qual outro conteúdo (como imagens ou tableas embutidas/inline table) na mesma linha;
 
-        - ::first-line: O pseudoelemento ::first-line aplica estilos à primeira linha de um elemento no nível do bloco. Observe que o comprimento da primeira linha depende de muitos fatores,
-                        incluindo a largura do elemento, a largura do documento e o tamanho da fonte do texto;
+            - ::first-line: O pseudoelemento ::first-line aplica estilos à primeira linha de um elemento no nível do bloco. Observe que o comprimento da primeira linha depende de muitos fatores, incluindo a largura do elemento, a largura do documento e o tamanho da fonte do texto;
 
-        - ::selection: O pseudo-elemento CSS ::selection aplica estilos para partes do documento que foram selecionadas pelo usuário (tal como clicar e arrastar o ponteiro do mouse através de um
-                       texto. Apenas certas propriedades podem ser usadas com o ::selection:
+            - ::selection: O pseudo-elemento CSS ::selection aplica estilos para partes do documento que foram selecionadas pelo usuário (tal como clicar e arrastar o ponteiro do mouse através de um texto. Apenas certas propriedades podem ser usadas com o ::selection:
 
-                           - color;
+                    - color;
 
-                           - background-color;
+                    - background-color;
 
-                           - cursor;
+                    - cursor;
 
-                           - caret-color;
+                    - caret-color;
 
-                           - outline e seus longhands;
+                    - outline e seus longhands;
 
-                           - text-decoration e suas propriedades associadas;
+                    - text-decoration e suas propriedades associadas;
 
-                           - text-emphasis-color;
+                    - text-emphasis-color;
 
-                           - text-shadow.
+                    - text-shadow.
 
-        - ::placeholder: O pseudo-elemento CSS ::placeholder representa o texto do placeholder em um elemento <input> ou <textarea>;
+            - ::placeholder: O pseudo-elemento CSS ::placeholder representa o texto do placeholder em um elemento <input> ou <textarea>;
 
-        - ::marker: O pseudo-elemento CSS :: marker seleciona a caixa do marcador de um item da lista, que normalmente contém um marcador ou número. Funciona em qualquer elemento ou pseudoelemento
-                    definido para exibir: item de lista, como os elementos <li> e <summary>;
+            - ::marker: O pseudo-elemento CSS :: marker seleciona a caixa do marcador de um item da lista, que normalmente contém um marcador ou número. Funciona em qualquer elemento ou pseudoelemento definido para exibir: item de lista, como os elementos <li> e <summary>;
 
-        - ::spelling-error: O pseudo-elemento CSS :: spelling-error representa um segmento de texto que o agente do usuário sinalizou como incorretamente escrito, Apenas um pequeno subconjunto de
-                            propriedades CSS pode ser usado em uma regra com :: spelling-error em seu seletor:
+            - ::spelling-error: O pseudo-elemento CSS :: spelling-error representa um segmento de texto que o agente do usuário sinalizou como incorretamente escrito, Apenas um pequeno subconjunto de propriedades CSS pode ser usado em uma regra com :: spelling-error em seu seletor:
 
-                                - color;
+                    - color;
 
-                                - background-color;
+                    - background-color;
 
-                                - cursor;
+                    - cursor;
 
-                                - caret-color;
+                    - caret-color;
 
-                                - outline e seus longhands;
+                    - outline e seus longhands;
 
-                                - text-decoration e suas propriedades associadas;
+                    - text-decoration e suas propriedades associadas;
 
-                                - text-emphasis-color;
+                    - text-emphasis-color;
 
-                                - text-shadow.
+                    - text-shadow.
 
-        - ::grammar-error: O pseudo-elemento CSS :: grammar-error representa um segmento de texto que o agente do usuário sinalizou como gramaticalmente incorreto, Apenas um pequeno subconjunto de
-                           propriedades CSS pode ser usado em uma regra com :: grammar-error em seu seletor:
+            - ::grammar-error: O pseudo-elemento CSS :: grammar-error representa um segmento de texto que o agente do usuário sinalizou como gramaticalmente incorreto, Apenas um pequeno subconjunto de propriedades CSS pode ser usado em uma regra com :: grammar-error em seu seletor:
 
-                                - color;
+                    - color;
 
-                                - background-color;
+                    - background-color;
 
-                                - cursor;
+                    - cursor;
 
-                                - caret-color;
+                    - caret-color;
 
-                                - outline e seus longhands;
+                    - outline e seus longhands;
 
-                                - text-decoration e suas propriedades associadas;
+                    - text-decoration e suas propriedades associadas;
 
-                                - text-emphasis-color;
+                    - text-emphasis-color;
 
-                                - text-shadow.
+                    - text-shadow.
 
 */
