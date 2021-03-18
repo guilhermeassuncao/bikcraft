@@ -621,250 +621,91 @@
 
         Valores
         
-            - <'font-style'>: Veja o font-style;
+            - <length>: O tamanho da margem como um valor fixo;
 
-            - <'font-variant'>: Veja o font-variant;
+            - <percentage>: O tamanho da margem como uma porcentagem, em relação à largura do bloco que o contém;
 
-            - <'font-weight'>: Veja o font-weight;
-
-            - <'font-stretch'>: Veja o font-stretch;
-
-            - <'font-size'>: Veja o font-size;
-
-            - <'line-height'>: Veja o line-height;
-
-            - <'font-family'>: Veja o font-family;
-
+            - auto: O navegador seleciona uma margem adequada para usar. Por exemplo, em certos casos, esse valor pode ser usado para centralizar um elemento.
 
     Esta propriedade é uma abreviatura para as seguintes propriedades CSS:
 
-        - font-family: A propriedade CSS font-family especifica uma lista priorizada de um ou mais nomes de famílias de fontes e / ou nomes de família genéricos para o elemento selecionado. Os valores são separados por vírgulas para indicar que são alternativas. O navegador selecionará a primeira fonte da lista que está instalada.
+        - margin-bottom: A propriedade CSS margin-bottom define a área da margem na parte inferior de um elemento. Um valor positivo o coloca mais longe de seus vizinhos, enquanto um valor negativo o coloca mais perto.
 
             Sintaxe
 
-                - font-family: Georgia, serif;
+                - margin-bottom: 1em;
 
-                - font-family: "Gill Sans", sans-serif;
+                - margin-bottom: 10%;
 
-                - font-family: sans-serif;
+                - margin-bottom: 10px;
 
-                - font-family: serif;
-
-                - font-family: cursive;
-
-                - font-family: system-ui;
+                - margin-bottom: 0;
 
             Valores
 
-                - <family-name>: O nome de uma família de fontes. Por exemplo, "Times" e "Helvetica" são famílias de fontes. Os nomes de família de fontes contendo espaços em branco devem ser citados;
+                - <length>: O tamanho da margem como um valor fixo;
                 
-                - <generic-name>: As famílias de fontes genéricas são um mecanismo de fallback, um meio de preservar algumas das intenções do autor da folha de estilo quando nenhuma das fontes especificadas está disponível. Sobrenomes genéricos são palavras-chave e não devem ser citados. Uma família de fontes genérica deve ser o último item na lista de nomes de famílias de fontes. As seguintes palavras-chave são definidas:
+                - <percentage>: O tamanho da margem como uma porcentagem, em relação à largura do bloco que o contém;
+                
+                - auto: O navegador seleciona um valor adequado para usar.
 
-                    - serif;
-
-                    - sans-serif;
-
-                    - monospace;
-
-                    - cursive;
-
-                    - fantasy;
-
-                    - system-ui;
-
-                    - ui-serif;
-
-                    - ui-sans-serif;
-
-                    - ui-monospace;
-
-                    - ui-rounded;
-
-                    - math;
-
-                    - emoji;
-
-                    - fangsong.
-
-        - font-size: A propriedade CSS font-size define o tamanho da fonte. Alterar o tamanho da fonte também atualiza os tamanhos das unidades <comprimento> relativas ao tamanho da fonte, como em, ex e assim por diante.
+        - margin-left: A propriedade CSS margin-left define a área da margem no lado esquerdo de um elemento. Um valor positivo o coloca mais longe de seus vizinhos, enquanto um valor negativo o coloca mais perto.
 
             Sintaxe
 
-                - font-size: 1.2em;
+                - margin-left: 1em;
 
-                - font-size: x-small;
+                - margin-left: 10%;
 
-                - font-size: smaller;
+                - margin-left: 10px;
 
-                - font-size: 12px;
-
-                - font-size: 80%;
+                - margin-left: 0;
 
             Valores
 
-                - xx-small, x-small, small, medium, large, x-large, xx-large, xxx-large: Palavras-chave de tamanho absoluto, com base no tamanho da fonte padrão do usuário;
+                - <length>: O tamanho da margem como um valor fixo;
                 
-                - larger, smaller: Palavras-chave de tamanho relativo. A fonte será maior ou menor em relação ao tamanho da fonte do elemento pai, aproximadamente pela proporção usada para separar as palavras-chave de tamanho absoluto acima;
+                - <percentage>: O tamanho da margem como uma porcentagem, em relação à largura do bloco que o contém;
+                
+                - auto: A margem esquerda recebe uma parcela do espaço horizontal não utilizado, conforme determinado principalmente pelo modo de layout utilizado. Se os valores de margin-left e margin-right forem ambos automáticos, o espaço calculado será distribuído uniformemente.
 
-                - <length>: Um valor <length> positivo. Para a maioria das unidades relativas à fonte (como em e ex), o tamanho da fonte é relativo ao tamanho da fonte do elemento pai. Para unidades relativas à fonte baseadas na raiz (como rem), o tamanho da fonte é relativo ao tamanho da fonte usada pelo elemento <html> (raiz);
-
-                - <percentage>: Um valor <percentage> positivo, relativo ao tamanho da fonte do elemento pai.
-
-        - font-stretch: A propriedade CSS font-stretch seleciona uma face normal, condensada ou expandida de uma fonte.
+        - margin-right: A propriedade CSS margin-right define a área da margem no lado direito de um elemento. Um valor positivo o coloca mais longe de seus vizinhos, enquanto um valor negativo o coloca mais perto.
 
             Sintaxe
 
-                - font-stretch: ultra-condensed;
+                - margin-right: 1em;
 
-                - font-stretch: extra-condensed;
+                - margin-right: 10%;
 
-                - font-stretch: condensed;
+                - margin-right: 10px;
 
-                - font-stretch: semi-condensed;
-
-                - font-stretch: normal;
-
-                - font-stretch: semi-expanded;
-
-                - font-stretch: expanded;
-
-                - font-stretch: extra-expanded;
-
-                - font-stretch: ultra-expanded;
-
-                - font-stretch: 50%;
-
-                - font-stretch: 100%;
-
-                - font-stretch: 200%;
-
+                - margin-right: 0;
 
             Valores
 
-                - normal: Especifica uma face de fonte normal.
+                - <length>: O tamanho da margem como um valor fixo;
                 
-                - semi-condensed, condensed, extra-condensed, ultra-condensed: Especifica uma face de fonte mais condensada do que o normal, como ultracondensada como a mais condensada;
-
-                - semi-expanded, expanded, extra-expanded, ultra-expanded: Especifica uma face de fonte mais expandida do que o normal, com ultra-expandida como a mais expandida;
-
-                - <percentage>: Um valor de <percentage> entre 50% e 200% (inclusive). Valores negativos não são permitidos para esta propriedade.
-
-            A tabela abaixo mostra o mapeamento entre os valores das palavras-chave e as porcentagens numéricas:
-
-                Keyword                 Percentage
+                - <percentage>: O tamanho da margem como uma porcentagem, em relação à largura do bloco que o contém;
                 
-                ultra-condensed 	       50%
-                extra-condensed 	       62.5%
-                condensed 	               75%
-                semi-condensed 	           87.5%
-                normal 	                   100%
-                semi-expanded 	           112.5%
-                expanded 	               125%
-                extra-expanded 	           150%
-                ultra-expanded 	           200%
+                - auto: A margem direita recebe uma parcela do espaço horizontal não utilizado, conforme determinado principalmente pelo modo de layout utilizado. Se os valores de margin-left e margin-right forem ambos automáticos, o espaço calculado será distribuído uniformemente.
 
-        - font-style: A propriedade CSS font-style define se uma fonte deve ser estilizada com uma face normal, itálica ou oblíqua de sua família de fontes.
+        - margin-top: A propriedade CSS margin-top define a área da margem na parte superior de um elemento. Um valor positivo o coloca mais longe de seus vizinhos, enquanto um valor negativo o coloca mais perto.
 
             Sintaxe
 
-                - font-style: normal;
+                - margin-top: 1em;
 
-                - font-style: italic;
+                - margin-top: 10%;
 
-                - font-style: oblique;
+                - margin-top: 10px;
 
-                - font-style: oblique 40deg;
-
-            Valores
-
-                - normal: Seleciona uma fonte classificada como normal dentro de uma família de fontes;
-                
-                - italic: Seleciona uma fonte classificada como itálico. Se nenhuma versão em itálico da face estiver disponível, uma classificada como oblíqua será usada. Se nenhum estiver disponível, o estilo é simulado artificialmente;
-
-                - oblique: Seleciona uma fonte classificada como oblíqua. Se nenhuma versão oblíqua da face estiver disponível, uma classificada como itálico será usada. Se nenhum estiver disponível, o estilo é simulado artificialmente;
-
-                - oblique <angle>: Seleciona uma fonte classificada como oblíqua e, adicionalmente, especifica um ângulo para a inclinação do texto. Se uma ou mais faces oblíquas estiverem disponíveis na família de fontes escolhida, aquela que mais se aproxima do ângulo especificado é escolhida. Se nenhuma face oblíqua estiver disponível, o navegador sintetizará uma versão oblíqua da fonte inclinando uma face normal na quantidade especificada. Os valores válidos são valores de grau de -90deg a 90deg inclusive. Se um ângulo não for especificado, um ângulo de 14 graus será usado. Os valores positivos são inclinados para o final da linha, enquanto os valores negativos são inclinados para o início.
-                
-        - font-variant: A propriedade abreviada CSS font-variant permite que você defina todas as variantes de uma fonte.
-
-            Sintaxe
-
-                - font-variant: normal;
-
-                - font-variant: no-common-ligatures proportional-nums;
-
-                - font-variant: common-ligatures tabular-nums;
-
-                - font-variant: small-caps slashed-zero;
+                - margin-top: 0;
 
             Valores
 
-                - normal: Especifica uma face de fonte normal; cada uma das propriedades extensas tem um valor inicial normal. As propriedades extensas de font-variant são: font-variant-caps, font-variant-numeric, font-variant-alternates, font-variant-ligatures e font-variant-east-asian;
+                - <length>: O tamanho da margem como um valor fixo;
                 
-                - none: Define o valor de font-variant-ligatures como none e os valores da outra propriedade longhand como normais, seu valor inicial;
-
-                - <common-lig-values>, <discretionary-lig-values>, <historical-lig-values>, <contextual-alt-values>: Especifica as palavras-chave relacionadas à propriedade font-variant-ligatures longhand. Os valores possíveis são: common-ligatures, no-common-ligatures, discretionary-ligatures, no-discretionary-ligatures, historical-ligatures, no-historical-ligatures, contextual, and no-contextual;
-
-                - stylistic(), historical-forms, styleset(), character-variant(), swash(), ornaments(), annotation(): Especifica as palavras-chave e funções relacionadas à propriedade font-variant-alternates longhand;
-
-                - small-caps, all-small-caps, petite-caps, all-petite-caps, unicase, titling-caps: Especifica as palavras-chave e funções relacionadas à propriedade font-variant-caps longhand;
-
-                - <numeric-figure-values>, <numeric-spacing-values>, <numeric-fraction-values>, ordinal, slashed-zero: Especifica as palavras-chave relacionadas à propriedade font-variant-numeric longhand. Os valores possíveis são: lining-nums, oldstyle-nums, proportional-nums, tabular-nums, diagonal-fractions, stacked-fractions, ordinal, and slashed-zero;
-
-                - <east-asian-variant-values>, <east-asian-width-values>, ruby: Especifica as palavras-chave relacionadas à propriedade font-variant-east-asian longhand. Os valores possíveis são: jis78, jis83, jis90, jis04, simplified, traditional, full-width, proportional-width, ruby;
+                - <percentage>: O tamanho da margem como uma porcentagem, em relação à largura do bloco que o contém;
                 
-        - font-weight: A propriedade CSS font-weight define a espessura (ou negrito) da fonte. Os pesos disponíveis dependem da família de fontes atualmente definida.
-
-            Sintaxe
-
-                - font-weight: normal;
-
-                - font-weight: bold;
-
-                - font-weight: lighter;
-
-                - font-weight: bolder;
-
-                - font-weight: 100;
-
-                - font-weight: 900;
-
-            Valores
-
-                - normal: Peso normal da fonte. O mesmo que 400;
-                
-                - bold: Peso da fonte em negrito. O mesmo que 700;
-
-                - lighter: Um peso de fonte relativo mais leve do que o elemento pai;
-
-                - bolder: Um peso de fonte relativo mais pesado que o elemento pai;
-
-                - <number>: Um valor de <número> entre 1 e 1000, inclusive. Números mais altos representam pesos mais em negrito do que (ou tão negritos quanto) números mais baixos.
-
-        - line-height: A propriedade CSS line-height define a altura de uma caixa de linha. É comumente usado para definir a distância entre as linhas de texto. Em elementos de nível de bloco, ele especifica a altura mínima das caixas de linha dentro do elemento. Em elementos embutidos não substituídos, especifica a altura que é usada para calcular a altura da caixa de linha.
-
-            Sintaxe
-
-                - line-height: normal;
-
-                - line-height: 2.5;
-
-                - line-height: 3em;
-
-                - line-height: 150%;
-
-                - font-weight: 100;
-
-                - line-height: 32px;
-
-            Valores
-
-                - normal: Depende do agente do usuário. Os navegadores de desktop (incluindo o Firefox) usam um valor padrão de aproximadamente 1,2, dependendo da família de fontes do elemento;
-                
-                - <number>: O valor usado é este <número> sem unidade multiplicado pelo tamanho da fonte do próprio elemento. O valor calculado é igual ao <número> especificado. Na maioria dos casos, esta é a forma preferida de definir a altura da linha e evitar resultados inesperados devido à herança;
-
-                - <length>: O <comprimento> especificado é usado no cálculo da altura da caixa de linha. Valores dados em unidades em podem produzir resultados inesperados;
-
-                - <percentage>: Relativo ao tamanho da fonte do próprio elemento. O valor calculado é este <percentage> multiplicado pelo tamanho da fonte calculada do elemento. Os valores percentuais podem produzir resultados inesperados;
-
+                - auto: O navegador seleciona um valor adequado para usar.
 */
