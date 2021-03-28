@@ -1,0 +1,155 @@
+/* Funções
+
+    A notação funcional CSS é um tipo de valor CSS que pode representar tipos de dados mais complexos ou invocar processamento ou cálculos de dados especiais.
+
+    Sintaxe
+
+        seletor {
+            propriedade: funcao( [argumentos],  [argumentos]...);
+        }
+
+    A sintaxe começa com o nome da notação funcional, seguido por um parêntese esquerdo (. A seguir estão os argumentos da notação, e a função é finalizada com um parêntese de fechamento). As funções podem ter vários argumentos, que são formatados de forma semelhante aos valores de propriedade CSS. Espaços em branco são permitidos, mas são opcionais entre parênteses. Em algumas notações funcionais, vários argumentos são separados por vírgulas, enquanto outros usam espaços.
+
+*/
+
+/* Funções de Transformação
+
+    Essas funções são usadas quando o tipo de dados CSS <transform-function> é usado como um valor de transformação.
+
+        - matriz(): Descreve uma matriz de transformação 2D homogênea;
+        
+        - matrix3d​​(): Descreve uma transformação 3D como uma matriz homogênea 4 × 4;
+        
+        - perspective(): Define a distância entre o usuário e o plano z = 0;
+        
+        - rotate(): Gira um elemento em torno de um ponto fixo no plano 2D;
+        
+        - rotate3d(): Gira um elemento em torno de um eixo fixo no espaço 3D;
+        
+        - rotatex(): Gira um elemento em torno do eixo horizontal;
+        
+        - rotatey(): Gira um elemento em torno do eixo vertical;
+        
+        - rotatez(): Gira um elemento em torno do eixo z;
+        
+        - scale(): Dimensiona um elemento para cima ou para baixo no plano 2D;
+        
+        - scale3d(): Escala um elemento para cima ou para baixo no espaço 3D;
+        
+        - scalex(): Escala um elemento para cima ou para baixo horizontalmente;
+        
+        - scaley(): Escala um elemento para cima ou para baixo verticalmente;
+        
+        - scalez(): Dimensiona um elemento para cima ou para baixo ao longo do eixo z;
+        
+        - skew(): Inclina um elemento no plano 2D;
+        
+        - skewx(): Inclina um elemento na direção horizontal;
+        
+        - skewy(): Inclina um elemento na direção vertical;
+        
+        - translatey(): Traduz um elemento no plano 2D;
+        
+        - translate3d(): Traduz um elemento no espaço 3D;
+        
+        - translatex(): Traduz um elemento horizontalmente;
+        
+        - translatey(): Traduz um elemento verticalmente;
+        
+        - translatez(): Traduz um elemento ao longo do eixo z.
+
+*/
+
+/* Funções Matemáticas
+
+    As funções matemáticas permitem que valores numéricos CSS sejam escritos como expressões matemáticas.
+
+        - calc(): Uma função matemática que permite que a aritmética básica seja realizada em valores CSS numéricos;
+
+        - clamp(): Uma função de comparação que assume um valor mínimo, central e máximo e representa seu cálculo central;
+
+        - max(): Uma função de comparação que representa o maior de uma lista de valores;
+
+        - min(): Uma função de comparação que representa o menor de uma lista de valores.
+*/
+
+/* Funções de Filtro
+
+    O tipo de dados CSS <filter-function> representa um efeito gráfico que pode alterar a aparência de uma imagem de entrada. É usado nas propriedades de filtro e filtro de fundo.
+
+
+        - blur(): Desfoca a imagem;
+
+        - brightness(): Torna a imagem mais clara ou mais escura;
+
+        - contrast(): Aumenta ou diminui o contraste da imagem;
+
+        - drop-shadow(): Aplica uma sombra projetada atrás da imagem;
+
+        - grayscale: Converte a imagem em tons de cinza;
+
+        - hue-rotate(): Altera o matiz geral da imagem;
+
+        - invert(): Inverte as cores da imagem;
+
+        - opacity(): Torna a imagem transparente;
+
+        - saturate(): Super-satura ou desatura a imagem de entrada;
+
+        - sepia(): Converte a imagem em sépia.
+*/
+
+/* Funções de Cor
+
+    Funções que especificam diferentes representações de cores. Estes podem ser usados em qualquer lugar que uma <cor> seja válida.
+
+        - color(): Permite que uma cor seja especificada em um espaço de cor específico e especificado (em vez do espaço de cor sRGB implícito no qual a maioria das outras funções de cor opera);
+
+        - color-mix(): Pega dois valores de cor e retorna o resultado de misturá-los em um determinado espaço de cor por um determinado valor;
+
+        - hsl(): O modelo de cores HSL define uma determinada cor de acordo com seus componentes de matiz, saturação e luminosidade. Um componente alfa opcional representa a transparência da cor;
+
+        - hsla(): O modelo de cores HSL define uma determinada cor de acordo com seus componentes de matiz, saturação e luminosidade. O componente alfa representa a transparência da cor;
+
+        - hwb(): HWB (abreviação de Hue-Whiteness-Blackness) é outro método de especificação de cores, semelhante ao HSL;
+
+        - lab(): A cor do laboratório é independente do dispositivo e especifica as medidas físicas da cor;
+
+        - lch(): A cor LCH é independente do dispositivo e especifica a cor usando coordenadas polares para croma e matiz;
+
+        - rgb(): O modelo de cores RGB define uma determinada cor de acordo com seus componentes vermelho, verde e azul. Um componente alfa opcional representa a transparência da cor;
+
+        - rgba(): O modelo de cores RGB define uma determinada cor de acordo com seus componentes vermelho, verde e azul. O componente alfa representa a transparência da cor.
+*/
+
+/* Funções de Imagem
+
+    Essas funções podem ser usadas sempre que uma <imagem> for válida como o valor de uma propriedade.
+
+        - conic-gradient(): Os gradientes cônicos fazem a transição das cores progressivamente em torno de um círculo;
+
+        - image(): Define uma <image> de maneira semelhante à função url(), mas com funcionalidade adicional, incluindo a especificação da direcionalidade da imagem, a especificação de imagens substitutas para quando a imagem preferida não for compatível;
+
+        - image-set(): Um método que permite ao navegador escolher a imagem CSS mais apropriada de um determinado conjunto, principalmente para telas de alta densidade de pixels.
+
+        - linear-gradient(): Os gradientes lineares fazem a transição das cores progressivamente ao longo de uma linha imaginária;
+
+        - radial-gradient(): Os gradientes radiais fazem a transição das cores progressivamente de um ponto central (origem);
+
+        - repeating-linear-gradient(): É semelhante ao gradiente linear() e leva os mesmos argumentos, mas repete os pontos de cor infinitamente em todas as direções de modo a cobrir todo o seu contêiner;
+
+        - repeating-radial-gradient(): É semelhante ao gradiente radial() e leva os mesmos argumentos, mas repete as paradas de cor infinitamente em todas as direções de modo a cobrir todo o seu contêiner;
+
+        - repeating-conic-gradient(): É semelhante a conic-gradient() e leva os mesmos argumentos, mas repete os pontos de cor infinitamente em todas as direções de modo a cobrir todo o seu contêiner.
+
+*/
+
+/* Funções de Contador
+
+    As funções de contador são geralmente usadas com a propriedade content, embora em teoria possam ser usadas sempre que uma <string> for suportada.
+
+        - contador(): Retorna uma string que representa o valor atual do contador nomeado, se houver;
+        
+        - contadores (): Ativa contadores aninhados, retornando uma string concatenada que representa os valores atuais dos contadores nomeados, se houver algum.
+
+*/

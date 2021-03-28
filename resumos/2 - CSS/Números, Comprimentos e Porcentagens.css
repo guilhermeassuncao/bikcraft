@@ -104,6 +104,45 @@
                             </ul>
                         </li>
                     </ul>
+            
+            Vh e Vw
+
+                As unidades relativas vw (viewport width) e vh (viewport height) utilizam a largura e altura da viewport respectivamente:
+                    
+                    - vw 1% da largura da viewport;
+
+                    - vh 1% da altura da viewport.
+                
+                Com elas é possível atribuir a um elemento o tamanho (seja altura, seja largura) da viewport.
+
+                elemento {
+                    width: 100vw;
+                    height: 100vh;
+                }
+
+                Essa unidade de medida é muito parecida com a unidade relativa de porcentagem %. É possível afirmar que 1% é igual a 1vw, mas a grande diferença é que enquanto a unidade % é relativa ao elemento pai, as unidades vw e vh são relativas ao viewport.
+
+            Vmin e Vmax
+                
+                Essa unidade também se relaciona com as dimensões da viewport, mas com um porém. Anteriormente quando vimos vh e vw precisávamos escolher se gostaríamos de nos basear na altura (vh) ou na largura (vw) da viewport. Diferentemente das anteriores, o vmin utilizará como base a menor dimensão da viewport (altura x largura), vamos ao exemplo.
+
+                Imagine que estamos trabalhando com uma viewport de 1600px de altura e 900px de largura. Nesse caso, 1vmin terá o valor de 9px (1% da menor dimensão!), caso tenhamos 100vmin, esse será igual a 900px! Interessante né? No caso acima, a menor dimensão foi a da largura, porém se tivéssemos 300px para altura e 1400px para largura, nosso valor de referência seria o 300px! Sempre a menor dimensão!
+                
+                Seguindo a mesma base lógica da unidade anterior, o vmax terá como valor de referência a maior dimensão da viewport. Ou seja, utilizando o mesmo exemplo, se tivermos 1600px de altura e 900px de largura, 1vmax será equivalente a 16px! No segundo exemplo ocorrerá a mesma inversão, tendo 300px para altura e 1400px para largura, 1vmax será equivalente a 14px. Dessa vez sempre será a maior dimensão!
+                    
+                    - vmin 1% da MENOR medida entre vw e vh;
+
+                    - vmax 1% da MAIOR medida entre vw e vh.
+
+                    section {
+                        width: 100vmin;
+                        height: 100vmin;
+                    }
+
+                    section {
+                        width: 100vmax;
+                        height: 100vmax;
+                    }
 
 */
 
