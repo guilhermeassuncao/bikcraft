@@ -2,7 +2,7 @@
 
 <br>
 
-<div>
+<div align="center">
   <img src="bikcraft/public/img/bikcraft-github.svg" alt="bikcraft">
 </div>
 
