@@ -44,5 +44,57 @@
         <?php  
             require 'configs/section.php';
         ?>
+        <!-- Quebra -->
+        <section class="quebra">
+            <div class="container">
+                <blockquote class="quote-externo">
+                    <p>“o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.”</p>
+                    <cite>WILLIAM MORRIS</cite>
+                </blockquote>
+            </div>
+        </section>
+        <!-- Fim Quebra -->
+        <!-- Footer -->
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="grid-8 footer_historia">
+                        <h3>Nossa História</h3>
+                        <p>
+                            Quando iniciamos a Bikcraft queriamos apenas um produto que adoraríamos utilizar. Eramos apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos.
+                            Assim surgiu um sonho na garagem da nossa casa.
+                        </p>
+                    </div>
+                    <div class="grid-4 footer_contato">
+                        <h3>Contato</h3>
+                        <ul>
+                            <li>- +55 27 9999-9999</li>
+                            <li>- contato@bikcraft.com</li>
+                            <li>- Rua Pinheiros - Guriri - ES</li>
+                        </ul>
+                    </div>
+                    <div class="grid-4 footer_redes">
+                        <h3>Redes Sociais</h3>
+                        <ul>
+                            <li>
+                                <a href="http://facebook.com" target="_blank"><img src="./public/img/redes-sociais/facebook.svg" alt="Facebook Bikcraft" /></a>
+                            </li>
+                            <li>
+                                <a href="http://instragram.com" target="_blank"><img src="./public/img/redes-sociais/instagram.svg" alt="Instagram Bikcraft" /></a>
+                            </li>
+                            <li>
+                                <a href="http://twitter.com" target="_blank"><img src="./public/img/redes-sociais/twitter.svg" alt="Twitter Bikcraft" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <div class="container">
+                    <p class="grid-16">Bikcraft 2021 - Alguns direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- Fim Footer -->
     </body>
 </html>
