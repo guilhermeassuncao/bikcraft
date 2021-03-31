@@ -10,11 +10,11 @@
 
 ## :bookmark_tabs: Sobre
 
-Projeto desenvolvido na Next Level Week 3
+Projeto desenvolvido no curso Web Design Completo
 
-Intituição - Rocketseat
+Intituição - Origamid
 
-Professor - Mayk Brito
+Professor - André Rafael
 
 <br>
 
@@ -23,10 +23,6 @@ Professor - Mayk Brito
 - HTML5
 - CSS3
 - JavaScript
-- Node.js
-- Express
-- Handlebars
-- SQLite
 
 
 <br>
