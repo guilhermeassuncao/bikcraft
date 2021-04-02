@@ -1,0 +1,219 @@
+/* Introdução Interna */
+#produtos .introducao-interna {
+    background: var(--preto) url("../img/bg-produtos.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    margin-top: 92px;
+    height: 160px;
+    text-align: center;
+    color: var(--branco);
+    padding-top: 30px;
+}
+
+#produtos .introducao-interna h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#produtos .introducao-interna h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--branco);
+    margin: 6px auto 10px auto;
+}
+
+/* Subtitulo */
+
+#produtos .subtitulo-interno {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: var(--preto);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#produtos .subtitulo-interno::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--preto);
+    margin: 8px 0;
+}
+
+/*Produto */
+#produtos .produto_item {
+    padding-top: 60px;
+}
+
+#produtos .produto_item h2 {
+    color: var(--branco);
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    position: relative;
+    top: -180px;
+    text-align: center;
+    margin-bottom: -56px;
+}
+
+#produtos .produto_item h2::after,
+#produtos .produto_item h2::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--branco);
+    margin: 6px auto 8px auto;
+}
+
+#produtos .produto_icone {
+    background: var(--preto);
+    padding: 70px 0;
+}
+
+#produtos .produto_icone img {
+    margin: 0 auto;
+}
+
+#produtos .produto_info {
+    background: var(--preto);
+}
+
+#produtos .produto_info p {
+    color: var(--branco);
+    font-size: 18px;
+    line-height: 25px;
+    height: 180px;
+    padding: 30px 40px;
+}
+
+#produtos .produto_info ul li {
+    background: var(--amarelo);
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    float: left;
+    width: 229px;
+    height: 49px;
+    text-align: center;
+    padding-top: 16px;
+}
+
+#produtos .produto_info ul li:nth-child(1),
+#produtos .produto_info ul li:nth-child(2) {
+    margin-bottom: 2px;
+}
+
+#produtos .produto_info ul li:nth-child(2n) {
+    margin-left: 2px;
+}
+
+/* Orçamento */
+#produtos .orcamento {
+    background: var(--preto);
+    width: 100%;
+    margin-top: 60px;
+    padding: 40px 0;
+}
+
+#produtos .orcamento h2 {
+    color: var(--amarelo)
+}
+
+#produtos .orcamento h2::after {
+    background: var(--amarelo);
+}
+
+#produtos .form {
+    padding-right: 60px;
+}
+
+#produtos .form label {
+    display: block;
+    color: var(--branco);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 4px;
+}
+
+#produtos .form input {
+    display: block;
+    width: 100%;
+    border: 4px solid var(--amarelo);
+    background: none;
+    color: var(--branco);
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 14px;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+#produtos .form textarea {
+    display: block;
+    width: 100%;
+    height: 120px;
+    border: 4px solid var(--amarelo);
+    background: none;
+    color: var(--branco);
+    padding: 7px 10px;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 14px;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+#produtos .form button {
+    padding: 7px 40px;
+    background: none;
+}
+
+#produtos .orcamento_dados {
+    color: var(--branco)
+}
+
+#produtos .orcamento_dados h3 {
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: var(--amarelo);
+    font-weight: bold;
+}
+
+#produtos .orcamento_dados span {
+    display: block;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+#produtos .orcamento_dados span:nth-of-type(2) {
+    margin-bottom: 40px;
+}
+
+#produtos .orcamento_dados ul {
+    padding-right: 60px;
+}
+
+#produtos .orcamento_dados ul li {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+#produtos .orcamento_dados ul li:nth-child(2n+1) {
+    background: var(--preto-claro);
+}
+
+#produtos .orcamento_dados p {
+    margin: 16px 0;
+}

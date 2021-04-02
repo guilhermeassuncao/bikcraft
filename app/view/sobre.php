@@ -34,6 +34,7 @@
         </div>
     </section>
     <!-- Fim Missao e Sobre -->
+    <!-- Qualidade -->
     <section class="qualidade container">
         <div class="container">
             <h2 class="subtitulo">Qualidade</h2>
