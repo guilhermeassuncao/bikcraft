@@ -1,0 +1,219 @@
+/* Geral */
+
+:root {
+    --amarelo: #fec63e;
+    --preto: #000;
+    --branco: #fff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+img {
+    display: block;
+}
+
+
+.btn {
+    border: 3px solid var(--amarelo);
+    padding: 10px 30px;
+    color: var(--amarelo);
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    transition: all 0.5s ease;
+}
+
+.btn:hover {
+    color: var(--branco);
+    border-color: var(--branco);
+}
+
+.btn.btn-preto:hover {
+    color: var(--preto);
+    border-color: var(--preto);
+}
+
+.subtitulo {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: var(--preto);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.subtitulo::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--preto);
+    margin: 8px auto;
+}
+
+.subtitulo.subtitulo_amarelo {
+    color: var(--amarelo);
+}
+
+.subtitulo.subtitulo_amarelo::after {
+    background: var(--amarelo);
+}
+
+.quote-externo {
+    max-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 40px;
+    color: var(--branco);
+}
+
+.quote-externo {
+    max-width: 320px;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    margin-bottom: 40px;
+    color: var(--branco);
+}
+
+.quote-externo p {
+    font-style: italic;
+}
+
+.quote-externo p::before,
+.quote-externo p::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--branco);
+    margin: 14px auto 10px auto;
+}
+
+.quote-externo cite {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+/* Header */
+header.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--amarelo);
+    padding: 15px 0;
+    z-index: 10;
+}
+
+header.header .header_menu {
+    text-align: right;
+}
+
+header.header .header_menu ul li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+header.header .header_menu ul li a {
+    color: var(--preto);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 20px;
+    padding: 10px 0;
+}
+
+header.header .header_menu ul li a:hover {
+    color: var(--branco);
+}
+
+header.header .header_menu ul li a.menu_ativo {
+    color: var(--branco);
+}
+
+/* Footer */
+footer .footer {
+    width: 100%;
+    background: var(--preto);
+    color: var(--branco);
+    padding: 20px 0;
+}
+
+footer .footer h3 {
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--amarelo);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+footer .footer h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--amarelo);
+    margin: 6px 0 12px 0;
+}
+
+footer .footer .footer_historia {
+    padding-right: 40px;
+}
+
+footer .footer .footer_contato ul li {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+footer .footer .footer_redes ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer .footer .footer_redes ul li a {
+    border: 3px solid var(--amarelo);
+    display: block;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
+footer .footer_redes ul li a:hover {
+    border-color: var(--branco);
+}
+
+footer .copy {
+    width: 100%;
+    background: var(--amarelo);
+    padding: 20px 0;
+}
+
+footer .quebra {
+    background: url("../img/bg-footer.jpg") no-repeat center;
+    background-size: auto;
+    background-size: cover;
+    width: 100%;
+    height: 220px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+footer .quebra .quote-externo {
+    max-width: 400px;
+}

@@ -1,5 +1,15 @@
 <?php
     require 'configs/header.php';
+
+    $titulo = Array(
+        '/' => 'Bikcraft - Bicicletas Personalizadas',
+        '/sobre' => 'Bikcraft  – Sobre - Saiba mais sobre a gente',
+        '/produtos' => 'Bikcraft  – Produtos - Conheça as linhas Passeio, Retrô e Esporte',
+        '/portfolio' => 'Bikcraft  – Portfólio - Conheça o portfólio de clientes',
+        '/contato' => 'Bikcraft  – Contato - 27 99697-8448'
+    );
+
+    $tituloAtual = $_SERVER['REQUEST_URI'];
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -14,11 +24,12 @@
         <link rel="stylesheet" href="./public/css/normalize.css" />
         <link rel="stylesheet" href="./public/css/reset.css" />
         <link rel="stylesheet" href="./public/css/grid.css" />
-        <link rel="stylesheet" href="./public/css/estilo.css" />
+        <link rel="stylesheet" href="./public/css/geral.css" />
+        <link rel="stylesheet" href="./public/css<?php echo (($tituloAtual == '/') ? '/index' : $tituloAtual) ?>.css" />
         <!-- Fim CSS -->
 
         <!-- Titulo -->
-        <title>Bikcraft</title>
+        <title><?=$titulo[$tituloAtual]?></title>
         <!-- Fim Titulo -->
     </head>
     <body>
@@ -31,10 +42,10 @@
                 <!-- Navegação -->
                 <nav class="header_menu grid-12">
                     <ul>
-                        <li><a href="/sobre">Sobre</a></li>
-                        <li><a href="/produtos">Produtos</a></li>
-                        <li><a href="/portfolio">Portfólio</a></li>
-                        <li><a href="/contato">Contato</a></li>
+                        <li><a href="/sobre" <?php if ($tituloAtual == '/sobre') echo "class='menu_ativo'";?>> Sobre</a></li>
+                        <li><a href="/produtos" <?php if ($tituloAtual == '/produtos') echo "class='menu_ativo'";?>>Produtos</a></li>
+                        <li><a href="/portfolio" <?php if ($tituloAtual == '/portfolio') echo "class='menu_ativo'";?>>Portfólio</a></li>
+                        <li><a href="/contato" <?php if ($tituloAtual == '/contato') echo "class='menu_ativo'";?>>Contato</a></li>
                     </ul>
                 </nav>
                 <!-- Fim Navegação -->
@@ -44,18 +55,17 @@
         <?php  
             require 'configs/section.php';
         ?>
-        <!-- Quebra -->
-        <section class="quebra">
-            <div class="container">
-                <blockquote class="quote-externo">
-                    <p>“o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.”</p>
-                    <cite>WILLIAM MORRIS</cite>
-                </blockquote>
-            </div>
-        </section>
-        <!-- Fim Quebra -->
+
         <!-- Footer -->
         <footer>
+            <div class="quebra">
+                <div class="container">
+                    <blockquote class="quote-externo">
+                        <p>“o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana.”</p>
+                        <cite>WILLIAM MORRIS</cite>
+                    </blockquote>
+                </div>
+            </div>
             <div class="footer">
                 <div class="container">
                     <div class="grid-8 footer_historia">
@@ -68,7 +78,7 @@
                     <div class="grid-4 footer_contato">
                         <h3>Contato</h3>
                         <ul>
-                            <li>- +55 27 9999-9999</li>
+                            <li>- +55 27 99697-8448</li>
                             <li>- contato@bikcraft.com</li>
                             <li>- Rua Pinheiros - Guriri - ES</li>
                         </ul>

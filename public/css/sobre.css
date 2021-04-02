@@ -1,0 +1,118 @@
+/* Introdução Interna */
+#sobre .introducao-interna {
+    background: var(--preto) url("../img/bg-sobre.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    margin-top: 92px;
+    height: 160px;
+    text-align: center;
+    color: var(--branco);
+    padding-top: 30px;
+}
+
+#sobre .introducao-interna h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#sobre .introducao-interna h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--branco);
+    margin: 6px auto 10px auto;
+}
+
+/* Subtitulo */
+
+#sobre .subtitulo-interno {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: var(--preto);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#sobre .subtitulo-interno::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--preto);
+    margin: 8px 0;
+}
+
+/* Missão e Sobre */
+#sobre .missao_sobre {
+    padding-top: 60px;
+}
+
+#sobre .missao_sobre p {
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 1em;
+    padding-right: 60px;
+}
+
+#sobre .missao_sobre ul li {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#sobre .foto-equipe {
+    padding-top: 20px;
+}
+
+/* Qualidade */
+#sobre .qualidade {
+    padding: 60px 0;
+}
+
+#sobre .qualidade::after {
+    content: "";
+    width: 634px;
+    height: 83px;
+    display: block;
+    background: url("../img/linhas.svg") no-repeat center;
+    position: absolute;
+    top: 209px;
+    right: 162px;
+
+}
+
+#sobre .qualidade img {
+    margin: 0 auto;
+}
+
+#sobre .qualidade .qualidade_lista {
+    padding-top: 20px;
+    overflow: auto;
+}
+
+#sobre .qualidade .qualidade_lista li {
+    text-align: center;
+    padding: 0 40px;
+}
+
+#sobre .qualidade .qualidade_lista li h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 20px;
+}
+
+#sobre .qualidade_lista li h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--preto);
+    margin: 6px auto;
+}
