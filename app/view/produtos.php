@@ -90,7 +90,7 @@
     <section class="orcamento">
         <div class="container">
             <h2 class="subtitulo">Orçamento</h2>
-            <form  id="form_orcamento" class="grid-8 form">
+            <form id="form_orcamento" class="grid-8 form">
                 <label for="nome">Nome</label>
                 <input id="nome" name="nome" type="text" />
                 <label for="email">E-mail</label>
