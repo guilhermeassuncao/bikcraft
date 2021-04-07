@@ -26,6 +26,7 @@
         <link rel="stylesheet" href="./public/css/grid.css" />
         <link rel="stylesheet" href="./public/css/geral.css" />
         <link rel="stylesheet" href="./public/css<?php echo (($tituloAtual == '/') ? '/index' : $tituloAtual) ?>.css" />
+        <link rel="stylesheet" href="./public/css/responsivo.css" />
         <!-- Fim CSS -->
 
         <!-- Titulo -->
