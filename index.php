@@ -27,7 +27,12 @@
         <link rel="stylesheet" href="./public/css/geral.css" />
         <link rel="stylesheet" href="./public/css<?php echo (($tituloAtual == '/') ? '/index' : $tituloAtual) ?>.css" />
         <link rel="stylesheet" href="./public/css/responsivo.css" />
+        <link rel="stylesheet" href="./public/css/simple-slide.css" />
         <!-- Fim CSS -->
+
+        <!-- Script -->
+        <script>document.documentElement.classList.add("js")</script>
+        <!-- Fim Script -->
 
         <!-- Titulo -->
         <title><?=$titulo[$tituloAtual]?></title>
@@ -107,5 +112,10 @@
             </div>
         </footer>
         <!-- Fim Footer -->
+
+        <!-- Script -->
+        <script src="./public/js/simple-slide.js"></script>
+        <script src="./public/js/script.js"></script>
+        <!-- Fim Script -->
     </body>
 </html>

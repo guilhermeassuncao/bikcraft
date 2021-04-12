@@ -22,6 +22,35 @@
     #index .call {
         padding-top: 40px;
     }
+
+    /* Sobre */
+    #sobre .qualidade::after {
+        right: 66px;
+    }
+
+    #sobre .qualidade .qualidade_lista li {
+        padding: 0 10px;
+    }
+
+    /* Produtos */
+    #produtos .produto_item h2 {
+        top: -150px;
+    }
+
+    #produtos .produto_icone {
+        padding: 41px 0;
+    }
+
+    #produtos .produto_info p {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 20px 30px;
+        height: 122px;
+    }
+
+    #produtos .produto_info ul li {
+        width: 181px;
+    }
 }
 
 /* Mobile */
@@ -54,6 +83,9 @@
     header.header .header_menu ul li a:hover {
         border-color: var(--branco);
     }
+    header.header .header_menu ul li a.menu_ativo {
+        border-color: var(--branco);
+    }
 
     /* Index */
     #index .introducao {
@@ -73,5 +105,76 @@
 
     #index .introducao h1 {
         font-size: 36px;
+    }
+
+    /* Sobre */
+    #sobre .qualidade::after {
+        display: none;
+    }
+
+    #sobre .introducao-interna {
+        margin-top: 0;
+    }
+
+    #sobre .missao_sobre p {
+        padding-right: 0;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #sobre .missao_sobre ul li {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    /* Produtos */
+    #produtos .introducao-interna {
+        margin-top: 0;
+    }
+
+    #produtos .produto_item h2 {
+        top: -100px;
+        margin-bottom: -68px;
+        font-size: 30px;
+    }
+    
+    #produtos .produto_icone {
+        padding: 25px 0;
+    }
+
+    #produtos .produto_info p {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 20px 30px;
+        height: auto;
+    }
+
+    #produtos .produto_info ul li {
+        width: 149px;
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 14px;
+    }
+    #produtos .form {
+        padding-right: 0;
+    }
+
+    #produtos .orcamento_dados ul {
+        padding-right: 0;
+    }
+
+    /* Portfolio */
+    #portfolio .introducao-interna {
+        margin-top: 0;
+    }
+
+    /* Contato */
+    #contato .introducao-interna {
+        margin-top: 0;
+    }
+
+    #contato .contato_form {
+        padding-right: 0;
+        margin-bottom: 40px;
     }
 }
