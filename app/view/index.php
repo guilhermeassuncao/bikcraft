@@ -3,17 +3,17 @@
     <!-- Introdução -->
     <section class="introducao">
         <div class="container">
-            <h1>BICICLETAS FEITAS A MÃO</h1>
-            <blockquote class="quote-externo">
+            <h1 data-anime="400" class="fadeInDown">BICICLETAS FEITAS A MÃO</h1>
+            <blockquote data-anime="800" class="quote-externo fadeInDown">
                 <p>“não tenha nada em sua casa que você não considere útil ou acredita ser bonito”</p>
                 <cite>WILLIAM MORRIS</cite>
             </blockquote>
-            <a href="/produtos" class="btn">Orçamento</a>
+            <a data-anime="1200" href="/produtos" class="btn">Orçamento</a>
         </div>
     </section>
     <!-- Fim Introdução -->
     <!-- Produtos -->
-    <section class="produtos">
+    <section data-anime="1600" class="produtos fadeInDown">
         <div class="container">
             <h2 class="subtitulo">Produtos</h2>
             <ul class="produtos_lista">

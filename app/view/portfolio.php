@@ -3,8 +3,8 @@
     <!-- Introdução Interna -->
     <section class="introducao-interna">
         <div class="container">
-            <h1>Portfólio</h1>
-            <p>conheça os projetos que amamos mostrar</p>
+            <h1 data-anime="400" class="fadeInDown">Portfólio</h1>
+            <p data-anime="800" class="fadeInDown">conheça os projetos que amamos mostrar</p>
         </div>
     </section>
     <!-- Fim Introdução Interna -->
@@ -27,7 +27,7 @@
     </section>
     <!--Fim Blockquote -->
     <!-- Portfólio -->
-    <section class="portfolio">
+    <section data-anime="1200" class="portfolio fadeInDown">
         <div class="container"  data-slide="portfolio">
             <ul class="portfolio_lista">
                 <li class="grid-8"><img src="../../public/img/portfolio/retro.jpg" alt="Bikcraft Retro" /></li>

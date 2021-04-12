@@ -3,13 +3,13 @@
     <!-- Introdução Interna -->
     <section class="introducao-interna">
         <div class="container">
-            <h1>Produtos</h1>
-            <p>conheça todos os nossos produtos</p>
+            <h1 data-anime="400" class="fadeInDown">Produtos</h1>
+            <p data-anime="800" class="fadeInDown">conheça todos os nossos produtos</p>
         </div>
     </section>
     <!-- Fim Introdução Interna -->
     <!-- Produtos -->
-    <section class="produto_item">
+    <section data-anime="1200" class="produto_item fadeInDown">
         <div class="container">
             <div class="grid-11">
                 <img src="../../public/img/produtos/bikcraft-passeio-1.jpg" alt="Bikcraft Passeio" />
@@ -35,7 +35,7 @@
             </div>
         </div>
     </section>
-    <section class="produto_item">
+    <section data-anime="1200" class="produto_item fadeInDown">
         <div class="container">
             <div class="grid-11">
                 <img src="../../public/img/produtos/bikcraft-esporte-1.jpg" alt="Bikcraft Esporte" />
@@ -60,7 +60,7 @@
             </div>
         </div>
     </section>
-    <section class="produto_item">
+    <section data-anime="1200" class="produto_item fadeInDown">
         <div class="container">
             <div class="grid-11">
                 <img src="../../public/img/produtos/bikcraft-retro-1.jpg" alt="Bikcraft Retrô" />

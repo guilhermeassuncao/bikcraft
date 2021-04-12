@@ -3,13 +3,13 @@
     <!-- Introdução Interna -->
     <section class="introducao-interna">
         <div class="container">
-            <h1>Contato</h1>
-            <p>tire suas dúvidas com a gente</p>
+            <h1 data-anime="400" class="fadeInDown">Contato</h1>
+            <p data-anime="800" class="fadeInDown">tire suas dúvidas com a gente</p>
         </div>
     </section>
     <!-- Fim Introdução Interna -->
     <!-- Contato -->
-    <section class="informacoes">
+    <section data-anime="1200" class="informacoes fadeInDown">
         <div class="container">
             <form class="contato_form grid-8">
                 <label for="nome">Nome</label>
@@ -21,7 +21,7 @@
                 <label for="mensagem">Mensagem</label>
                 <textarea name="mensagem" id="mensagem"></textarea>
 
-                <button id="enviar" name="enviar" type="submit" class="btn btn-preto">Enviar</button>
+                <button id="enviar" name="enviar" type="button" onclick="enviarEmail()" class="btn btn-preto">Enviar</button>
             </form>
             <div class="contato_dados grid-8">
                 <h3>Dados</h3>
@@ -47,7 +47,7 @@
     </section>
     <!-- Fim Contato -->
     <!-- Mapa -->
-    <section class="contato_mapa">
+    <section data-anime="1600" class="contato_mapa fadeInDown">
         <div class="container">
             <a href="http://google.com" target="_blank" class="grid-16"><img src="../../public/img/endereco-bikcraft.jpg" alt="Rua Ali Perto - Botafogo"></a>
         </div>

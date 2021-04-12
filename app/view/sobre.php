@@ -3,13 +3,13 @@
     <!-- Introdução Interna -->
     <section class="introducao-interna">
         <div class="container">
-            <h1>Sobre</h1>
-            <p>conheça mais sobre a bikcraft</p>
+            <h1 data-anime="400" class="fadeInDown">Sobre</h1>
+            <p data-anime="800" class="fadeInDown">conheça mais sobre a bikcraft</p>
         </div>
     </section>
     <!-- Fim Introdução Interna -->
     <!-- Missao e Sobre -->
-    <section class="missao_sobre">
+    <section data-anime="1200" class="missao_sobre fadeInDown">
         <div class="container">
             <div class="grid-10">
                 <h2 class="subtitulo-interno">História, Missão e Visão</h2>

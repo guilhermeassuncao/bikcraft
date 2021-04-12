@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="./public/css<?php echo (($tituloAtual == '/') ? '/index' : $tituloAtual) ?>.css" />
         <link rel="stylesheet" href="./public/css/responsivo.css" />
         <link rel="stylesheet" href="./public/css/simple-slide.css" />
+        <link rel="stylesheet" href="./public/css/simple-anime.css" />
         <!-- Fim CSS -->
 
         <!-- Script -->
@@ -115,7 +116,9 @@
 
         <!-- Script -->
         <script src="./public/js/simple-slide.js"></script>
+        <script src="./public/js/simple-anime.js"></script>
         <script src="./public/js/script.js"></script>
+        <?php echo (($tituloAtual == '/contato') ? '<script src="./public/js/contato.js"></script>' : '') ?>
         <!-- Fim Script -->
     </body>
 </html>
