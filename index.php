@@ -85,9 +85,9 @@
                     <div class="grid-4 footer_contato">
                         <h3>Contato</h3>
                         <ul>
-                            <li>- +55 27 99697-8448</li>
+                            <li>- +55 99 99999-9999</li>
                             <li>- contato@bikcraft.com</li>
-                            <li>- Rua Pinheiros - Guriri - ES</li>
+                            <li>- Rua Ali Perto - Botafogo - RJ</li>
                         </ul>
                     </div>
                     <div class="grid-4 footer_redes">
@@ -117,8 +117,8 @@
         <!-- Script -->
         <script src="./public/js/simple-slide.js"></script>
         <script src="./public/js/simple-anime.js"></script>
+        <script src="./public/js/simple-form.js"></script>
         <script src="./public/js/script.js"></script>
-        <?php echo (($tituloAtual == '/contato') ? '<script src="./public/js/contato.js"></script>' : '') ?>
         <!-- Fim Script -->
     </body>
 </html>

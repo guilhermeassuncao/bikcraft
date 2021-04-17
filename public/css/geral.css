@@ -4,6 +4,9 @@
     --preto: #000;
     --preto-claro: #1d1d1d;
     --branco: #fff;
+    --branco: #fff;
+    --verde: #31aa39;
+    --vermelho: #f64540;
 }
 
 body {
@@ -31,6 +34,7 @@ img {
     font-weight: bold;
     letter-spacing: 0.1em;
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 .btn:hover {

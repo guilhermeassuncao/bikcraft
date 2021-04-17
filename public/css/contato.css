@@ -133,3 +133,33 @@
 #contato .contato_mapa {
     margin-bottom: 60px;
 }
+
+#contato .nao-aparece {
+    visibility: hidden;
+    height: 0;
+    position: absolute;
+}
+
+#contato #form-sucesso {
+    color: var(--verde);
+    padding: 60px 30px;
+    border: 4px solid var(--verde);
+}
+
+#contato #form-erro {
+    color: var(--vermelho);
+    padding: 60px 30px;
+    border: 4px solid var(--vermelho);
+}
+
+#contato #form-sucesso h3,
+#contato #form-erro h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#contato #form-sucesso p,
+#contato #form-erro p {
+    font-size: 16px;
+    font-family: Georgia, "Times New Roman", serif;
+}

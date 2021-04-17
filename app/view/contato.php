@@ -11,21 +11,27 @@
     <!-- Contato -->
     <section data-anime="1200" class="informacoes fadeInDown">
         <div class="container">
-            <form class="contato_form grid-8">
+            <form class="contato_form grid-8 formphp" method="post" name="form" action="../../configs/enviar-sendgrid.php">
                 <label for="nome">Nome</label>
-                <input id="nome" name="nome" type="text" />
+                <input id="nome" name="nome" type="text" required/>
                 <label for="email">E-mail</label>
-                <input id="email" name="email" type="text" />
+                <input id="email" name="email" type="email" required/>
                 <label for="telefone">Telefone</label>
-                <input id="telefone" name="telefone" type="text" />
+                <input id="telefone" name="telefone" type="text" required/>
                 <label for="mensagem">Mensagem</label>
-                <textarea name="mensagem" id="mensagem"></textarea>
+                <textarea name="mensagem" id="mensagem" required></textarea>
 
-                <button id="enviar" name="enviar" type="button" onclick="enviarEmail()" class="btn btn-preto">Enviar</button>
+
+                <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+				<input type="text" class="nao-aparece" name="leaveblank">
+				<label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+				<input type="text" class="nao-aparece" name="dontchange" value="http://">
+
+                <button id="enviar" name="enviar" type="submit" class="btn btn-preto">Enviar</button>
             </form>
             <div class="contato_dados grid-8">
                 <h3>Dados</h3>
-                <span>+55 21 9999-9999</span>
+                <span>+55 99 9999-9999</span>
                 <span>contato@bikcraft.com</span>
                 <span>Rua Ali Perto - Botafogo</span>
                 <span>Rio de Janeiro - RJ - Brasil</span>
