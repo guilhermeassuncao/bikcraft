@@ -11,7 +11,7 @@
     <!-- Contato -->
     <section data-anime="1200" class="informacoes fadeInDown">
         <div class="container">
-            <form class="contato_form grid-8 formphp" method="post" name="form" action="../../configs/enviar-sendgrid.php">
+            <form class="contato_form grid-8 formphp" method="post" name="form" action="../../configs/enviar.php">
                 <label for="nome">Nome</label>
                 <input id="nome" name="nome" type="text" required/>
                 <label for="email">E-mail</label>

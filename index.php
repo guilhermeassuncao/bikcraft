@@ -6,7 +6,7 @@
         '/sobre' => 'Bikcraft  – Sobre - Saiba mais sobre a gente',
         '/produtos' => 'Bikcraft  – Produtos - Conheça as linhas Passeio, Retrô e Esporte',
         '/portfolio' => 'Bikcraft  – Portfólio - Conheça o portfólio de clientes',
-        '/contato' => 'Bikcraft  – Contato - 27 99697-8448'
+        '/contato' => 'Bikcraft  – Contato - 27 99999-9999'
     );
 
     $tituloAtual = $_SERVER['REQUEST_URI'];
@@ -16,6 +16,16 @@
     <head>
         <!-- Meta Tags -->
         <meta charset="UTF-8" />
+
+        <meta name="description" content="Compre a sua bicicçeta personaliza da Bikcraft. Possuímos modelos Passeio, Retrô e Esporte">
+        
+		<meta property="og:type" content="website"/>
+		<meta property="og:title" content="<?=$titulo[$tituloAtual]?>"/>
+		<meta property="og:description" content="Compre a sua bicicçeta personaliza da Bikcraft. Possuímos modelos Passeio, Retrô e Esporte"/>
+		<meta property="og:url" content="https://bikcraft-guilhermeassuncao.herokuapp.com"/>
+		<meta property="og:image" content="https://bikcraft-guilhermeassuncao.herokuapp.com/public/img/og-image.png"/>
+
+
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- Fim Meta Tags -->
@@ -34,6 +44,10 @@
         <!-- Script -->
         <script>document.documentElement.classList.add("js")</script>
         <!-- Fim Script -->
+
+        <!-- Icone -->
+        <link rel="shortcut icon" href="./public/img/favicon.ico" type="image/x-icon">
+        <!--  -->
 
         <!-- Titulo -->
         <title><?=$titulo[$tituloAtual]?></title>
