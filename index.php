@@ -19,11 +19,11 @@
 
         <meta name="description" content="Compre a sua bicicçeta personaliza da Bikcraft. Possuímos modelos Passeio, Retrô e Esporte">
         
-		<meta property="og:type" content="website"/>
-		<meta property="og:title" content="<?=$titulo[$tituloAtual]?>"/>
-		<meta property="og:description" content="Compre a sua bicicçeta personaliza da Bikcraft. Possuímos modelos Passeio, Retrô e Esporte"/>
-		<meta property="og:url" content="https://bikcraft-guilhermeassuncao.herokuapp.com"/>
-		<meta property="og:image" content="https://bikcraft-guilhermeassuncao.herokuapp.com/public/img/og-image.png"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:title" content="<?=$titulo[$tituloAtual]?>"/>
+	<meta property="og:description" content="Compre a sua bicicçeta personaliza da Bikcraft. Possuímos modelos Passeio, Retrô e Esporte"/>
+	<meta property="og:url" content="https://bikcraft-guilhermeassuncao.herokuapp.com"/>
+	<meta property="og:image" content="https://bikcraft-guilhermeassuncao.herokuapp.com/public/img/og-image.png"/>
 
 
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
