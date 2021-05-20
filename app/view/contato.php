@@ -13,19 +13,18 @@
         <div class="container">
             <form class="contato_form grid-8 formphp" method="post" name="form" action="../../configs/enviar.php">
                 <label for="nome">Nome</label>
-                <input id="nome" name="nome" type="text" required/>
+                <input id="nome" name="nome" type="text" required />
                 <label for="email">E-mail</label>
-                <input id="email" name="email" type="email" required/>
+                <input id="email" name="email" type="email" required />
                 <label for="telefone">Telefone</label>
-                <input id="telefone" name="telefone" type="text" required/>
+                <input id="telefone" name="telefone" type="text" required />
                 <label for="mensagem">Mensagem</label>
                 <textarea name="mensagem" id="mensagem" required></textarea>
 
-
                 <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
-				<input type="text" class="nao-aparece" name="leaveblank">
-				<label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
-				<input type="text" class="nao-aparece" name="dontchange" value="http://">
+                <input type="text" class="nao-aparece" name="leaveblank" />
+                <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+                <input type="text" class="nao-aparece" name="dontchange" value="http://" />
 
                 <button id="enviar" name="enviar" type="submit" class="btn btn-preto">Enviar</button>
             </form>
@@ -55,7 +54,7 @@
     <!-- Mapa -->
     <section data-anime="1600" class="contato_mapa fadeInDown">
         <div class="container">
-            <a href="http://google.com" target="_blank" class="grid-16"><img src="../../public/img/endereco-bikcraft.jpg" alt="Rua Ali Perto - Botafogo"></a>
+            <a href="http://google.com" target="_blank" class="grid-16"><img src="../../public/img/endereco-bikcraft.jpg" alt="Rua Ali Perto - Botafogo" /></a>
         </div>
     </section>
     <!-- Fim Mapa -->

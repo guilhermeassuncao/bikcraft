@@ -124,7 +124,7 @@
 }
 
 #produtos .orcamento h2 {
-    color: var(--amarelo)
+    color: var(--amarelo);
 }
 
 #produtos .orcamento h2::after {
@@ -177,7 +177,7 @@
 }
 
 #produtos .orcamento_dados {
-    color: var(--branco)
+    color: var(--branco);
 }
 
 #produtos .orcamento_dados h3 {
@@ -209,7 +209,7 @@
     padding: 10px 15px;
 }
 
-#produtos .orcamento_dados ul li:nth-child(2n+1) {
+#produtos .orcamento_dados ul li:nth-child(2n + 1) {
     background: var(--preto-claro);
 }
 

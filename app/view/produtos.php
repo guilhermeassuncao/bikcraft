@@ -90,21 +90,20 @@
     <section class="orcamento">
         <div class="container">
             <h2 class="subtitulo">Orçamento</h2>
-            <form class="form grid-8 formphp" id="form_orcamento" method="post" name="form" action="../../configs/enviar.php" >
-            <label for="nome">Nome</label>
-                <input id="nome" name="nome" type="text" required/>
+            <form class="form grid-8 formphp" id="form_orcamento" method="post" name="form" action="../../configs/enviar.php">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" required />
                 <label for="email">E-mail</label>
-                <input id="email" name="email" type="email" required/>
+                <input id="email" name="email" type="email" required />
                 <label for="telefone">Telefone</label>
-                <input id="telefone" name="telefone" type="text" required/>
+                <input id="telefone" name="telefone" type="text" required />
                 <label for="mensagem">Mensagem</label>
                 <textarea name="mensagem" id="mensagem" required></textarea>
 
-
                 <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
-				<input type="text" class="nao-aparece" name="leaveblank">
-				<label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
-				<input type="text" class="nao-aparece" name="dontchange" value="http://">
+                <input type="text" class="nao-aparece" name="leaveblank" />
+                <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+                <input type="text" class="nao-aparece" name="dontchange" value="http://" />
 
                 <button id="enviar" name="enviar" type="submit" class="btn">Enviar</button>
             </form>

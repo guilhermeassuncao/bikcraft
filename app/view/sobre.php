@@ -14,8 +14,8 @@
             <div class="grid-10">
                 <h2 class="subtitulo-interno">História, Missão e Visão</h2>
                 <p>
-                    Quando iniciamos a Bikcraft queriamos apenas um produto que adoraríamos utilizar. Eramos apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos. Assim surgiu um
-                    sonho na garagem da nossa casa.
+                    Quando iniciamos a Bikcraft queriamos apenas um produto que adoraríamos utilizar. Eramos apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos. Assim
+                    surgiu um sonho na garagem da nossa casa.
                 </p>
                 <p>Conheça os nossos produtos, pergunte para os nossos clientes e descubra a maravilha de ter uma Bikcraft na sua casa.</p>
             </div>
