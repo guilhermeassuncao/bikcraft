@@ -16,10 +16,10 @@
     <head>
         <!-- Meta Tags -->
         <meta charset="UTF-8" />
-        <meta name="description" content="Compre a sua bicicçeta personaliza da Bikcraft">
+        <meta name="description" content="Compre a sua bicicleta personaliza da Bikcraft">
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="<?=$titulo[$tituloAtual]?>"/>
-        <meta property="og:description" content="Compre a sua bicicçeta personaliza da Bikcraft"/>
+        <meta property="og:description" content="Compre a sua bicicleta personaliza da Bikcraft"/>
         <meta property="og:url" content="https://bikcraft-guilhermeassuncao.herokuapp.com"/>
         <meta property="og:image" content="https://bikcraft-guilhermeassuncao.herokuapp.com/public/img/og-image.png"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
