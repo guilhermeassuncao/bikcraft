@@ -43,7 +43,7 @@
 
         <!-- Icone -->
         <link rel="shortcut icon" href="./public/img/favicon.ico" type="image/x-icon">
-        <!--  -->
+        <!-- Fim Icone -->
 
         <!-- Titulo -->
         <title><?=$titulo[$tituloAtual]?></title>
