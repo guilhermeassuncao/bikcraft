@@ -1,6 +1,4 @@
-<!-- Index -->
 <main id="index">
-    <!-- Introdução -->
     <section class="introducao">
         <div class="container">
             <h1 data-anime="400" class="fadeInDown">BICICLETAS FEITAS A MÃO</h1>
@@ -11,8 +9,6 @@
             <a data-anime="1200" href="/produtos" class="btn">Orçamento</a>
         </div>
     </section>
-    <!-- Fim Introdução -->
-    <!-- Produtos -->
     <section data-anime="1600" class="produtos fadeInDown">
         <div class="container">
             <h2 class="subtitulo">Produtos</h2>
@@ -47,8 +43,6 @@
             </div>
         </div>
     </section>
-    <!-- Fim Produtos -->
-    <!-- Portfólio -->
     <section class="portfolio">
         <div class="container">
             <h2 class="subtitulo subtitulo_amarelo">Portfólio</h2>
@@ -63,8 +57,6 @@
             </div>
         </div>
     </section>
-    <!-- Fim Portfólio -->
-    <!-- Qualidade -->
     <section class="qualidade container">
         <div class="container">
             <h2 class="subtitulo">Qualidade</h2>
@@ -76,11 +68,13 @@
                 </li>
                 <li class="grid-1-3">
                     <h3>DESIGN</h3>
-                    <p>Feitas sob medida para o melhor conforto e eficiência. Adaptamos a sua Bikcraft para o seu corpo.</p>
+                    <p>Feitas sob medida para o melhor conforto e eficiência. Adaptamos a sua Bikcraft para o seu corpo.
+                    </p>
                 </li>
                 <li class="grid-1-3">
                     <h3>SUSTENTABILIDADE</h3>
-                    <p>Além de ajudar a cuidar do meio ambiente, tirando carros da rua, toda a produção é sustentável.</p>
+                    <p>Além de ajudar a cuidar do meio ambiente, tirando carros da rua, toda a produção é sustentável.
+                    </p>
                 </li>
             </ul>
             <div class="call">
@@ -89,6 +83,4 @@
             </div>
         </div>
     </section>
-    <!-- Fim Qualidade -->
 </main>
-<!-- Fim Index -->

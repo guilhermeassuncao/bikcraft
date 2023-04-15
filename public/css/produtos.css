@@ -1,6 +1,5 @@
-/* Introdução Interna */
 #produtos .introducao-interna {
-    background: var(--preto) url("../img/bg-produtos.jpg") no-repeat center;
+    background: var(--preto) url('../img/bg-produtos.jpg') no-repeat center;
     background-size: cover;
     width: 100%;
     margin-top: 92px;
@@ -17,7 +16,7 @@
 }
 
 #produtos .introducao-interna h1::after {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 3px;
@@ -25,7 +24,6 @@
     margin: 6px auto 10px auto;
 }
 
-/* Subtitulo */
 #produtos .subtitulo-interno {
     font-size: 24px;
     line-height: 30px;
@@ -37,7 +35,7 @@
 }
 
 #produtos .subtitulo-interno::after {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 3px;
@@ -45,7 +43,6 @@
     margin: 8px 0;
 }
 
-/*Produto */
 #produtos .produto_item {
     padding-top: 60px;
 }
@@ -64,7 +61,7 @@
 
 #produtos .produto_item h2::after,
 #produtos .produto_item h2::before {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 3px;
@@ -115,7 +112,6 @@
     margin-left: 2px;
 }
 
-/* Orçamento */
 #produtos .orcamento {
     background: var(--preto);
     width: 100%;
@@ -138,7 +134,7 @@
 #produtos .form label {
     display: block;
     color: var(--branco);
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 4px;
@@ -154,7 +150,7 @@
     margin-bottom: 10px;
     outline: none;
     font-size: 14px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, 'Times New Roman', serif;
 }
 
 #produtos .form textarea {
@@ -168,7 +164,7 @@
     margin-bottom: 20px;
     outline: none;
     font-size: 14px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, 'Times New Roman', serif;
 }
 
 #produtos .form button {
@@ -192,7 +188,7 @@
     display: block;
     font-size: 18px;
     line-height: 30px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, 'Times New Roman', serif;
 }
 
 #produtos .orcamento_dados span:nth-of-type(2) {
@@ -204,7 +200,7 @@
 }
 
 #produtos .orcamento_dados ul li {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 14px;
     padding: 10px 15px;
 }
@@ -244,5 +240,5 @@
 #produtos #form-sucesso p,
 #produtos #form-erro p {
     font-size: 16px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, 'Times New Roman', serif;
 }

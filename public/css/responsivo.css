@@ -1,6 +1,4 @@
-/* Tablet */
 @media only screen and (min-width: 788px) and (max-width: 979px) {
-    /* Geral */
     footer .footer .footer_redes ul li a {
         padding: 5px;
     }
@@ -10,7 +8,6 @@
         height: 26px;
     }
 
-    /* Index */
     #index .qualidade::after {
         right: 66px;
     }
@@ -23,7 +20,6 @@
         padding-top: 40px;
     }
 
-    /* Sobre */
     #sobre .qualidade::after {
         right: 66px;
     }
@@ -32,7 +28,6 @@
         padding: 0 10px;
     }
 
-    /* Produtos */
     #produtos .produto_item h2 {
         top: -150px;
     }
@@ -53,9 +48,7 @@
     }
 }
 
-/* Mobile */
 @media only screen and (max-width: 787px) {
-    /* Geral */
     header.header {
         position: relative;
         padding-bottom: 0px;
@@ -87,11 +80,10 @@
         border-color: var(--branco);
     }
 
-    /* Index */
     #index .introducao {
         margin-top: 0px;
         padding-top: 50px;
-        background: url("../img/bg-mobile.jpg");
+        background: url('../img/bg-mobile.jpg');
         background-size: cover;
     }
 
@@ -107,7 +99,6 @@
         font-size: 36px;
     }
 
-    /* Sobre */
     #sobre .qualidade::after {
         display: none;
     }
@@ -127,7 +118,6 @@
         line-height: 25px;
     }
 
-    /* Produtos */
     #produtos .introducao-interna {
         margin-top: 0;
     }
@@ -163,12 +153,10 @@
         padding-right: 0;
     }
 
-    /* Portfolio */
     #portfolio .introducao-interna {
         margin-top: 0;
     }
 
-    /* Contato */
     #contato .introducao-interna {
         margin-top: 0;
     }

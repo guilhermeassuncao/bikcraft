@@ -15,7 +15,7 @@
 
 .container:after,
 .container:before {
-    content: " ";
+    content: ' ';
     display: table;
 }
 
@@ -97,7 +97,6 @@
     width: 300px;
 }
 
-/* Responsivo */
 @media only screen and (min-width: 788px) and (max-width: 979px) {
     .container {
         width: 768px;

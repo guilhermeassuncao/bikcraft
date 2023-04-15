@@ -1,6 +1,5 @@
-/* Introdução Interna */
 #portfolio .introducao-interna {
-    background: var(--preto) url("../img/bg-portfolio.jpg") no-repeat center;
+    background: var(--preto) url('../img/bg-portfolio.jpg') no-repeat center;
     background-size: cover;
     width: 100%;
     margin-top: 92px;
@@ -17,7 +16,7 @@
 }
 
 #portfolio .introducao-interna h1::after {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 3px;
@@ -25,7 +24,6 @@
     margin: 6px auto 10px auto;
 }
 
-/* Subtitulo */
 #portfolio .subtitulo-interno {
     font-size: 24px;
     line-height: 30px;
@@ -37,7 +35,7 @@
 }
 
 #portfolio .subtitulo-interno::after {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 3px;
@@ -45,7 +43,6 @@
     margin: 8px 0;
 }
 
-/* Portfólio */
 #portfolio .portfolio {
     width: 100%;
     background: var(--preto);
@@ -56,7 +53,6 @@
     margin-top: 20px;
 }
 
-/* Blockquote */
 #portfolio .quote_clientes {
     padding: 60px 0;
     max-width: 460px;
@@ -65,7 +61,7 @@
 
 #portfolio .quote_clientes p {
     text-align: center;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 18px;
     line-height: 25px;
     font-style: italic;

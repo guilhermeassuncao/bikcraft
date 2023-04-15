@@ -1,14 +1,10 @@
-<!-- Produtos -->
 <main id="produtos">
-    <!-- Introdução Interna -->
     <section class="introducao-interna">
         <div class="container">
             <h1 data-anime="400" class="fadeInDown">Produtos</h1>
             <p data-anime="800" class="fadeInDown">conheça todos os nossos produtos</p>
         </div>
     </section>
-    <!-- Fim Introdução Interna -->
-    <!-- Produtos -->
     <section data-anime="1200" class="produto_item fadeInDown">
         <div class="container">
             <div class="grid-11">
@@ -85,8 +81,6 @@
             </div>
         </div>
     </section>
-    <!-- Fim Produtos -->
-    <!-- Orcçamento -->
     <section class="orcamento">
         <div class="container">
             <h2 class="subtitulo">Orçamento</h2>
@@ -123,6 +117,4 @@
             </div>
         </div>
     </section>
-    <!-- Fim Orcçamento -->
 </main>
-<!-- Fim Produtos -->

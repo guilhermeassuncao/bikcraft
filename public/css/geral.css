@@ -1,4 +1,3 @@
-/* Geral */
 :root {
     --amarelo: #fec63e;
     --preto: #000;
@@ -14,7 +13,7 @@ body {
 }
 
 p {
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 14px;
     line-height: 20px;
 }
@@ -59,7 +58,7 @@ img {
 }
 
 .subtitulo::after {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 3px;
@@ -97,7 +96,7 @@ img {
 
 .quote-externo p::before,
 .quote-externo p::after {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 3px;
@@ -112,7 +111,6 @@ img {
     letter-spacing: 0.1em;
 }
 
-/* Header */
 header.header {
     position: fixed;
     top: 0;
@@ -150,7 +148,6 @@ header.header .header_menu ul li a.menu_ativo {
     color: var(--branco);
 }
 
-/* Footer */
 footer .footer {
     width: 100%;
     background: var(--preto);
@@ -168,7 +165,7 @@ footer .footer h3 {
 }
 
 footer .footer h3::after {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 3px;
@@ -183,7 +180,7 @@ footer .footer .footer_historia {
 footer .footer .footer_contato ul li {
     font-size: 14px;
     line-height: 20px;
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, 'Times New Roman', serif;
 }
 
 footer .footer .footer_redes ul li {
@@ -209,7 +206,7 @@ footer .copy {
 }
 
 footer .quebra {
-    background: url("../img/bg-footer.jpg") no-repeat center;
+    background: url('../img/bg-footer.jpg') no-repeat center;
     background-size: cover;
     width: 100%;
     height: 220px;

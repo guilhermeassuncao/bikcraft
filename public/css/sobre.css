@@ -1,6 +1,5 @@
-/* Introdução Interna */
 #sobre .introducao-interna {
-    background: var(--preto) url("../img/bg-sobre.jpg") no-repeat center;
+    background: var(--preto) url('../img/bg-sobre.jpg') no-repeat center;
     background-size: cover;
     width: 100%;
     margin-top: 92px;
@@ -17,7 +16,7 @@
 }
 
 #sobre .introducao-interna h1::after {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 3px;
@@ -25,7 +24,6 @@
     margin: 6px auto 10px auto;
 }
 
-/* Subtitulo */
 #sobre .subtitulo-interno {
     font-size: 24px;
     line-height: 30px;
@@ -37,7 +35,7 @@
 }
 
 #sobre .subtitulo-interno::after {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 3px;
@@ -45,7 +43,6 @@
     margin: 8px 0;
 }
 
-/* Missão e Sobre */
 #sobre .missao_sobre {
     padding-top: 60px;
 }
@@ -58,7 +55,7 @@
 }
 
 #sobre .missao_sobre ul li {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 18px;
     line-height: 30px;
 }
@@ -67,17 +64,16 @@
     padding-top: 20px;
 }
 
-/* Qualidade */
 #sobre .qualidade {
     padding: 60px 0;
 }
 
 #sobre .qualidade::after {
-    content: "";
+    content: '';
     width: 634px;
     height: 83px;
     display: block;
-    background: url("../img/linhas.svg") no-repeat center;
+    background: url('../img/linhas.svg') no-repeat center;
     position: absolute;
     top: 209px;
     right: 162px;
@@ -107,7 +103,7 @@
 }
 
 #sobre .qualidade_lista li h3::after {
-    content: "";
+    content: '';
     display: block;
     width: 60px;
     height: 3px;
