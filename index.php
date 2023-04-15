@@ -18,8 +18,8 @@ $tituloAtual = $_SERVER['REQUEST_URI'];
     <meta property="og:type" content="website" />
     <meta property="og:title" content="<?= $titulo[$tituloAtual] ?>" />
     <meta property="og:description" content="Compre a sua bicicleta personaliza da Bikcraft" />
-    <meta property="og:url" content="https://bikcraft-guilhermeassuncao.herokuapp.com" />
-    <meta property="og:image" content="https://bikcraft-guilhermeassuncao.herokuapp.com/public/img/og-image.png" />
+    <meta property="og:url" content="https://bikcraft.guilhermeassuncao.dev" />
+    <meta property="og:image" content="https://bikcraft.guilhermeassuncao.dev/public/img/og-image.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
