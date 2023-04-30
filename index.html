@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Compre a sua bicicleta personaliza da Bikcraft" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="<?= $titulo[$tituloAtual] ?>" />
+        <meta property="og:description" content="Compre a sua bicicleta personaliza da Bikcraft" />
+        <meta property="og:url" content="https://bikcraft.guilhermeassuncao.dev" />
+        <meta property="og:image" content="https://bikcraft.guilhermeassuncao.dev/public/img/og-image.png" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./public/css/normalize.css" />
+        <link rel="stylesheet" href="./public/css/reset.css" />
+        <link rel="stylesheet" href="./public/css/grid.css" />
+        <link rel="stylesheet" href="./public/css/geral.css" />
+        <link rel="stylesheet" href="./public/css/index.css" />
+        <link rel="stylesheet" href="./public/css/responsivo.css" />
+        <link rel="stylesheet" href="./public/css/simple-slide.css" />
+        <link rel="stylesheet" href="./public/css/simple-anime.css" />
+
+        <script>
+            document.documentElement.classList.add('js');
+        </script>
+
+        <link rel="shortcut icon" href="./public/img/favicon.ico" type="image/x-icon" />
+
+        <title>Bikcraft | Bicicletas Personalizadas</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <a href="/" class="grid-4">
+                    <img src="./public/img/bikcraft.svg" alt="Bikcraft" />
+                </a>
+                <nav class="header_menu grid-12">
+                    <ul>
+                        <li><a href="./sobre.html"> Sobre</a></li>
+                        <li><a href="./produtos.html">Produtos</a></li>
+                        <li><a href="./portfolio.html">Portfólio</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main id="index">
+            <section class="introducao">
+                <div class="container">
+                    <h1 data-anime="400" class="fadeInDown">BICICLETAS FEITAS A MÃO</h1>
+                    <blockquote data-anime="800" class="quote-externo fadeInDown">
+                        <p>“não tenha nada em sua casa que você não considere útil ou acredita ser bonito”</p>
+                        <cite>WILLIAM MORRIS</cite>
+                    </blockquote>
+                    <a data-anime="1200" href="/produtos" class="btn">Orçamento</a>
+                </div>
+            </section>
+            <section data-anime="1600" class="produtos fadeInDown">
+                <div class="container">
+                    <h2 class="subtitulo">Produtos</h2>
+                    <ul class="produtos_lista">
+                        <li class="grid-1-3">
+                            <div class="produtos_icone">
+                                <img src="./public/img/produtos/passeio.svg" alt="Bikcraft Passeio" />
+                            </div>
+                            <h3>Passeio</h3>
+                            <p>Muito melhor do que passear pela orla a vidros fechados.</p>
+                        </li>
+
+                        <li class="grid-1-3">
+                            <div class="produtos_icone">
+                                <img src="./public/img/produtos/esporte.svg" alt="Bikcraft Esporte" />
+                            </div>
+                            <h3>Esporte</h3>
+                            <p>Mais rápida do que Forrest Gump, ninguém vai pegar você.</p>
+                        </li>
+
+                        <li class="grid-1-3">
+                            <div class="produtos_icone">
+                                <img src="./public/img/produtos/retro.svg" alt="Bikcraft Retrô" />
+                            </div>
+                            <h3>Retrô</h3>
+                            <p>O passado volta para lembrarmos o que devemos fazer no futuro.</p>
+                        </li>
+                    </ul>
+                    <div class="call">
+                        <p>clique aqui e veja os detalhes dos produtos</p>
+                        <a href="/produtos" class="btn btn-preto">Produtos</a>
+                    </div>
+                </div>
+            </section>
+            <section class="portfolio">
+                <div class="container">
+                    <h2 class="subtitulo subtitulo_amarelo">Portfólio</h2>
+                    <ul class="portfolio_lista">
+                        <li class="grid-8"><img src="./public/img/portfolio/retro.jpg" alt="Bikcraft Retro" /></li>
+                        <li class="grid-8">
+                            <img src="./public/img/portfolio/passeio.jpg" alt="Bikcraft Passeio" />
+                        </li>
+                        <li class="grid-16">
+                            <img src="./public/img/portfolio/esporte.jpg" alt="Bikcraft Esporte" />
+                        </li>
+                    </ul>
+                    <div class="call call_branco">
+                        <p>conheça mais o nosso portfólio</p>
+                        <a href="/portfolio" class="btn">Portfólio</a>
+                    </div>
+                </div>
+            </section>
+            <section class="qualidade container">
+                <div class="container">
+                    <h2 class="subtitulo">Qualidade</h2>
+                    <img src="./public/img/bikcraft-qualidade.svg" alt="Bikcraft" />
+                    <ul class="qualidade_lista">
+                        <li class="grid-1-3">
+                            <h3>DURABILIDADE</h3>
+                            <p>
+                                Sólida como pedra, leve como o vento e resistente como o diamante, são nossos
+                                diferenciais.
+                            </p>
+                        </li>
+                        <li class="grid-1-3">
+                            <h3>DESIGN</h3>
+                            <p>
+                                Feitas sob medida para o melhor conforto e eficiência. Adaptamos a sua Bikcraft para o
+                                seu corpo.
+                            </p>
+                        </li>
+                        <li class="grid-1-3">
+                            <h3>SUSTENTABILIDADE</h3>
+                            <p>
+                                Além de ajudar a cuidar do meio ambiente, tirando carros da rua, toda a produção é
+                                sustentável.
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="call">
+                        <p>conheça mais a nossa história</p>
+                        <a href="/sobre" class="btn btn-preto">Sobre</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="quebra">
+                <div class="container">
+                    <blockquote class="quote-externo">
+                        <p>
+                            “o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes
+                            da vida cotidiana.”
+                        </p>
+                        <cite>WILLIAM MORRIS</cite>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="grid-8 footer_historia">
+                        <h3>Nossa História</h3>
+                        <p>
+                            Quando iniciamos a Bikcraft queriamos apenas um produto que adoraríamos utilizar. Eramos
+                            apaixonados por pedalar e também por fazer as coisas com as nossas próprias mãos. Assim
+                            surgiu um sonho na garagem da nossa casa.
+                        </p>
+                    </div>
+                    <div class="grid-4 footer_contato">
+                        <h3>Contato</h3>
+                        <ul>
+                            <li>- +55 99 99999-9999</li>
+                            <li>- contato@bikcraft.com</li>
+                            <li>- Rua Ali Perto - Botafogo - RJ</li>
+                        </ul>
+                    </div>
+                    <div class="grid-4 footer_redes">
+                        <h3>Redes Sociais</h3>
+                        <ul>
+                            <li>
+                                <a href="http://facebook.com" target="_blank"
+                                    ><img src="./public/img/redes-sociais/facebook.svg" alt="Facebook Bikcraft"
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="http://instragram.com" target="_blank"
+                                    ><img src="./public/img/redes-sociais/instagram.svg" alt="Instagram Bikcraft"
+                                /></a>
+                            </li>
+                            <li>
+                                <a href="http://twitter.com" target="_blank"
+                                    ><img src="./public/img/redes-sociais/twitter.svg" alt="Twitter Bikcraft"
+                                /></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copy">
+                <div class="container">
+                    <p class="grid-16">Bikcraft 2021 - Alguns direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./public/js/simple-slide.js"></script>
+        <script src="./public/js/simple-anime.js"></script>
+        <script src="./public/js/script.js"></script>
+    </body>
+</html>
